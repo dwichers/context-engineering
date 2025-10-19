@@ -1,10 +1,10 @@
 # Generate Feature PRP Document
 
-Genereer een uitgebreid Feature PRP (Product Requirements Prompt) document op basis van een Feature ARG document.
+Generate a comprehensive Feature PRP (Product Requirements Prompt) document based on a Feature ARG document.
 
 ## ARG Document Path: $ARGUMENTS
 
-Dit moet het pad zijn naar het feature ARG document: `_ce/arg/feature/[filename].md`
+This must be the path to the feature ARG document: `_ce/arg/feature/[filename].md`
 
 ---
 
@@ -38,33 +38,33 @@ Dit moet het pad zijn naar het feature ARG document: `_ce/arg/feature/[filename]
 
 ### Step 2: Research Phase
 
-**CRITICAL**: Research moet gericht zijn op HOE deze specifieke feature te implementeren.
+**CRITICAL**: Research must be focused on HOW to implement this specific feature.
 
 #### 2.1 Framework-Specific Research
 
-Voor de technical stack (uit Initial ARG):
+For the technical stack (from Initial ARG):
 
 1. **Feature-Specific Patterns**:
-   - Zoek "[framework] [feature type] implementation"
-   - Bijvoorbeeld: "FastAPI email notifications"
-   - Bijvoorbeeld: "React form validation patterns"
+   - Search "[framework] [feature type] implementation"
+   - Example: "FastAPI email notifications"
+   - Example: "React form validation patterns"
 
 2. **Integration Documentation**:
-   - Als feature gebruikt external API, zoek integration guides
+   - If feature uses external API, search integration guides
    - Rate limiting patterns
    - Error handling best practices
 
 3. **Database Migration Patterns**:
-   - Zoek migration strategies voor het framework
+   - Search migration strategies for the framework
    - Backward compatibility patterns
    - Data migration examples
 
 #### 2.2 External API/Service Research
 
-Als feature integreert met external services:
+If feature integrates with external services:
 
 ```yaml
-# Bijvoorbeeld voor SendGrid:
+# Example for SendGrid:
 - url: https://docs.sendgrid.com/api-reference
   sections:
     - Authentication
@@ -75,15 +75,15 @@ Als feature integreert met external services:
     - Authentication: API Key in header
     - Async sending recommended
 
-# Document voor ELKE external service
+# Document for EVERY external service
 ```
 
 #### 2.3 Similar Implementation Research
 
-Search voor:
-- Open-source projects met similar feature
+Search for:
+- Open-source projects with similar feature
 - GitHub code examples
-- Blog posts met gotchas
+- Blog posts with gotchas
 - Stack Overflow common pitfalls
 
 #### 2.4 Codebase Pattern Analysis
@@ -180,7 +180,7 @@ curl -X POST http://localhost:8000/api/v1/[endpoint]...
 
 ### Step 5: Document Known Issues & Solutions
 
-Gebaseerd op research:
+Based on research:
 
 ```markdown
 ## Common Issues & Solutions
@@ -210,7 +210,7 @@ Gebaseerd op research:
 
 ### Step 7: Quality Check & Confidence Score
 
-Beoordeel PRP op:
+Assess PRP on:
 - [ ] All context from ARG included
 - [ ] Research findings documented
 - [ ] Implementation tasks are concrete and detailed
@@ -221,7 +221,7 @@ Beoordeel PRP op:
 - [ ] Error scenarios covered
 - [ ] Security implications addressed
 
-**Score PRP op schaal 1-10**:
+**Score PRP on scale 1-10**:
 - 8-10: Can implement in one pass
 - 6-7: May need minor clarifications
 - <6: Need more detail or research
@@ -229,13 +229,13 @@ Beoordeel PRP op:
 ### Step 8: User Guidance
 
 ```
-✅ Feature PRP gegenereerd: _ce/prp/feature/[filename].md
+✅ Feature PRP generated: _ce/prp/feature/[filename].md
 
-Het PRP bevat:
-- Implementation blueprint met [X] concrete tasks
+The PRP contains:
+- Implementation blueprint with [X] concrete tasks
 - [Y] documentation references
-- [Z] code examples en patterns
-- Complete validation loop voor self-checking
+- [Z] code examples and patterns
+- Complete validation loop for self-checking
 
 Confidence Score: [score]/10
 [Rationale]
@@ -250,10 +250,10 @@ Dependencies:
 
 Estimated Implementation Time: [estimate]
 
-Volgende stap:
+Next step:
 /execute-feature _ce/prp/feature/[filename].md
 
-Dit zal:
+This will:
 1. [Task 1 summary]
 2. [Task 2 summary]
 ...
@@ -265,7 +265,7 @@ N. Run validation & tests
 ## Important Guidelines
 
 ### DO:
-- ✅ Research specific implementation patterns voor deze feature
+- ✅ Research specific implementation patterns for this feature
 - ✅ Document all external API details (rate limits, auth, etc.)
 - ✅ Reference existing code patterns from codebase
 - ✅ Provide detailed pseudocode for complex logic
@@ -413,18 +413,18 @@ Minor concern:
 
 ## Success Criteria
 
-Het /generate-feature-prp commando is succesvol wanneer:
+The /generate-feature-prp command is successful when:
 
-1. ✅ Compleet PRP document volgens template
+1. ✅ Complete PRP document according to template
 2. ✅ All necessary research completed
-3. ✅ Implementation tasks zijn concrete en uitvoerbaar
-4. ✅ Validation loops zijn executable
-5. ✅ Integration met bestaande code is duidelijk
-6. ✅ Dependencies zijn addressed
+3. ✅ Implementation tasks are concrete and executable
+4. ✅ Validation loops are executable
+5. ✅ Integration with existing code is clear
+6. ✅ Dependencies are addressed
 7. ✅ Confidence score is realistic
-8. ✅ Document opgeslagen op juiste locatie
-9. ✅ Gebruiker begrijpt next steps
+8. ✅ Document saved in correct location
+9. ✅ User understands next steps
 
 ---
 
-**Remember**: Een goed Feature PRP integreert naadloos met de bestaande codebase en volgt established patterns!
+**Remember**: A good Feature PRP integrates seamlessly with the existing codebase and follows established patterns!
