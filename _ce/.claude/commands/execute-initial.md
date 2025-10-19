@@ -1,10 +1,10 @@
 # Execute Initial PRP
 
-Implementeer het complete initial project setup volgens het Initial PRP document.
+Implement the complete initial project setup according to the Initial PRP document.
 
 ## PRP File: $ARGUMENTS
 
-Dit moet het pad zijn naar het initial PRP document: `_ce/prp/initial/[filename].md`
+This must be the path to the initial PRP document: `_ce/prp/initial/[filename].md`
 
 ---
 
@@ -31,7 +31,7 @@ Dit moet het pad zijn naar het initial PRP document: `_ce/prp/initial/[filename]
 
 ### Step 2: ULTRATHINK & Planning
 
-**CRITICAL**: Denk diep na voordat je begint met implementatie.
+**CRITICAL**: Think deeply before starting implementation.
 
 1. **Analyze the implementation blueprint**:
    - Understand dependencies between tasks
@@ -361,13 +361,13 @@ $ cd frontend && npm test
 
 🎯 Next Steps:
 
-Het foundation is klaar! Je kunt nu features implementeren.
+The foundation is ready! You can now implement features.
 
-Aanbevolen volgorde:
-1. Review _ce/arg/feature/ voor beschikbare features
-2. Of maak nieuwe feature: /generate-feature-arg "[description]"
-3. Genereer feature PRP: /generate-feature-prp _ce/arg/feature/[file].md
-4. Implementeer feature: /execute-feature _ce/prp/feature/[file].md
+Recommended order:
+1. Review _ce/arg/feature/ for available features
+2. Or create new feature: /generate-feature-arg "[description]"
+3. Generate feature PRP: /generate-feature-prp _ce/arg/feature/[file].md
+4. Implement feature: /execute-feature _ce/prp/feature/[file].md
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
@@ -434,7 +434,7 @@ Aanbevolen volgorde:
 
 ## Success Criteria
 
-Het /execute-initial commando is succesvol wanneer:
+The /execute-initial command is successful when:
 
 1. ✅ ALL tasks from PRP completed
 2. ✅ ALL validation gates pass
