@@ -1,101 +1,101 @@
 # Generate Initial ARG Document
 
-Genereer een gestructureerd Initial ARG (Application Requirements Generator) document op basis van het idee van de gebruiker.
+Generate a structured Initial ARG (Application Requirements Generator) document based on the user's idea.
 
 ## User Input: $ARGUMENTS
 
-Dit bevat de beschrijving van het applicatie/website idee.
+This contains the description of the application/website idea.
 
 ---
 
 ## Process
 
-### Step 1: Begrijp het Idee
+### Step 1: Understand the Idea
 
-Lees de gebruikersinput en identificeer:
-- Wat wil de gebruiker bouwen?
-- Welke problemen lost het op?
-- Wie is de doelgroep?
-- Zijn er al technische voorkeuren genoemd?
+Read the user input and identify:
+- What does the user want to build?
+- What problems does it solve?
+- Who is the target audience?
+- Are there any technical preferences mentioned?
 
-### Step 2: Interactieve Vragenronde
+### Step 2: Interactive Question Round
 
-Stel gerichte vragen om een compleet beeld te krijgen. Gebruik de template `_ce/arg/initial/template/initial-arg-template.md` als leidraad voor welke informatie nodig is.
+Ask targeted questions to get a complete picture. Use the template `_ce/arg/initial/template/initial-arg-template.md` as a guide for what information is needed.
 
-**Belangrijke vraaggebieden**:
+**Important question areas**:
 
 1. **Project Scope & Goals**
-   - Wat is het hoofddoel?
-   - Welk probleem lost dit op?
-   - Wie zijn de eindgebruikers?
-   - Wat zijn de must-have features vs nice-to-have?
+   - What is the main objective?
+   - What problem does this solve?
+   - Who are the end users?
+   - What are must-have features vs nice-to-have?
 
 2. **Technical Stack Preferences**
-   - Frontend: Heeft de gebruiker voorkeur voor React, Vue, Svelte, Next.js?
+   - Frontend: Does the user prefer React, Vue, Svelte, Next.js?
    - Backend: Python (FastAPI, Django), Node.js (Express, NestJS)?
    - Database: PostgreSQL, MongoDB, MySQL?
    - Hosting: Vercel, AWS, Railway?
-   - Heeft de gebruiker al ervaring met bepaalde technologieën?
+   - Does the user have experience with certain technologies?
 
-3. **UI/UX Verwachtingen**
-   - Zijn er design voorbeelden of inspiratie?
-   - Welke styling approach (Tailwind, CSS-in-JS, component library)?
-   - Dark mode ondersteuning?
-   - Mobile-first of desktop-first?
+3. **UI/UX Expectations**
+   - Are there design examples or inspiration?
+   - Which styling approach (Tailwind, CSS-in-JS, component library)?
+   - Dark mode support?
+   - Mobile-first or desktop-first?
 
-4. **Features & Functionaliteit**
-   - Welke core features zijn absoluut noodzakelijk?
-   - Welke features kunnen later toegevoegd worden?
-   - Zijn er gebruikersrollen (admin, user, etc.)?
-   - Welke integraties zijn nodig (APIs, payment, etc.)?
+4. **Features & Functionality**
+   - Which core features are absolutely necessary?
+   - Which features can be added later?
+   - Are there user roles (admin, user, etc.)?
+   - What integrations are needed (APIs, payment, etc.)?
 
 5. **Data & Storage**
-   - Wat voor data moet opgeslagen worden?
-   - Zijn er relaties tussen data entities?
-   - Hoeveel gebruikers/data volume verwacht?
+   - What kind of data needs to be stored?
+   - Are there relationships between data entities?
+   - How many users/data volume expected?
 
 6. **Security & Compliance**
-   - Welke security requirements?
-   - Privacy vereisten (GDPR)?
-   - User authentication nodig?
+   - What security requirements?
+   - Privacy requirements (GDPR)?
+   - User authentication needed?
 
 7. **Timeline & Resources**
-   - Wat is de gewenste timeline?
-   - Wordt dit een MVP of volledige applicatie?
-   - Zijn er budget constraints?
+   - What is the desired timeline?
+   - Will this be an MVP or full application?
+   - Are there budget constraints?
 
-**Strategie voor vragen stellen**:
-- Stel 3-5 vragen per ronde
-- Maak vragen specifiek en actionable
-- Bied multiple choice waar mogelijk (maar sta andere input toe)
-- Gebruik AskUserQuestion tool voor gestructureerde vragen
-- Itereer totdat je genoeg informatie hebt
+**Strategy for asking questions**:
+- Ask 3-5 questions per round
+- Make questions specific and actionable
+- Offer multiple choice where possible (but allow other input)
+- Use AskUserQuestion tool for structured questions
+- Iterate until you have enough information
 
-### Step 3: Verwerk Antwoorden
+### Step 3: Process Answers
 
-Na elke vragenronde:
-1. Verwerk de antwoorden in je begrip van het project
-2. Identificeer gaps in informatie
-3. Stel volgende ronde vragen indien nodig
-4. Herhaal totdat je een compleet beeld hebt
+After each question round:
+1. Process the answers into your understanding of the project
+2. Identify gaps in information
+3. Ask next round of questions if needed
+4. Repeat until you have a complete picture
 
-### Step 4: Genereer ARG Document
+### Step 4: Generate ARG Document
 
-Wanneer je voldoende informatie hebt:
+When you have sufficient information:
 
-1. **Lees de template**:
+1. **Read the template**:
    ```bash
    Read _ce/arg/initial/template/initial-arg-template.md
    ```
 
-2. **Vul alle secties in** met de verzamelde informatie:
-   - Project Overview (naam, type, beschrijving)
-   - Hoofddoel & Probleem
-   - Technische Stack (volledig gespecificeerd)
-   - Core Functionaliteiten (geprioriteerd)
-   - Gebruikersrollen & Permissies
-   - UI/UX Design (met referenties)
-   - Externe Integraties
+2. **Fill in all sections** with the collected information:
+   - Project Overview (name, type, description)
+   - Main Goal & Problem
+   - Technical Stack (fully specified)
+   - Core Functionalities (prioritized)
+   - User Roles & Permissions
+   - UI/UX Design (with references)
+   - External Integrations
    - Data Model
    - Security & Compliance
    - Performance & Scalability
@@ -104,34 +104,34 @@ Wanneer je voldoende informatie hebt:
    - Development Phases
    - Deployment & Operations
    - Documentation Requirements
-   - Open Questions (voor dingen die nog onduidelijk zijn)
-   - References & Inspiratie
+   - Open Questions (for things that are still unclear)
+   - References & Inspiration
 
-3. **Genereer bestandsnaam**:
-   - Format: `YYYY-MM-DD-[project-naam]-initial-arg.md`
-   - Bijvoorbeeld: `2024-03-15-ecommerce-platform-initial-arg.md`
+3. **Generate filename**:
+   - Format: `YYYY-MM-DD-[project-name]-initial-arg.md`
+   - Example: `2024-03-15-ecommerce-platform-initial-arg.md`
 
-4. **Sla op in juiste locatie**:
+4. **Save in correct location**:
    ```
    _ce/arg/initial/[generated-filename].md
    ```
 
 ### Step 5: Review & Confirmation
 
-1. Toon een samenvatting van het gegenereerde document
-2. Highlight eventuele open vragen of aannames
-3. Vraag of de gebruiker tevreden is of aanpassingen wil
+1. Show a summary of the generated document
+2. Highlight any open questions or assumptions
+3. Ask if the user is satisfied or wants modifications
 
 ### Step 6: Next Steps Guidance
 
-Informeer de gebruiker over de volgende stappen:
+Inform the user about next steps:
 ```
-✅ Initial ARG document gegenereerd: _ce/arg/initial/[filename].md
+✅ Initial ARG document generated: _ce/arg/initial/[filename].md
 
-Volgende stappen:
-1. Review het document en vul eventuele open vragen in
-2. Genereer een Initial PRP met: /generate-initial-prp _ce/arg/initial/[filename].md
-3. Voer het Initial PRP uit met: /execute-initial _ce/prp/initial/[prp-filename].md
+Next steps:
+1. Review the document and fill in any open questions
+2. Generate an Initial PRP with: /generate-initial-prp _ce/arg/initial/[filename].md
+3. Execute the Initial PRP with: /execute-initial _ce/prp/initial/[prp-filename].md
 ```
 
 ---
@@ -139,70 +139,70 @@ Volgende stappen:
 ## Important Guidelines
 
 ### DO:
-- ✅ Stel gerichte, specifieke vragen
-- ✅ Gebruik AskUserQuestion voor multiple choice vragen
-- ✅ Itereer totdat je een compleet beeld hebt
-- ✅ Vul ALLE secties van de template in (gebruik "TBD" voor echt onbekende info)
-- ✅ Prioriteer features (must-have vs nice-to-have)
-- ✅ Documenteer aannames duidelijk
-- ✅ Geef realistische schattingen voor development phases
-- ✅ Denk aan security en performance vanaf het begin
+- ✅ Ask targeted, specific questions
+- ✅ Use AskUserQuestion for multiple choice questions
+- ✅ Iterate until you have a complete picture
+- ✅ Fill in ALL sections of the template (use "TBD" for truly unknown info)
+- ✅ Prioritize features (must-have vs nice-to-have)
+- ✅ Document assumptions clearly
+- ✅ Give realistic estimates for development phases
+- ✅ Think about security and performance from the start
 
 ### DON'T:
-- ❌ Genereer geen document zonder voldoende informatie
-- ❌ Maak geen aannames zonder deze te documenteren
-- ❌ Sla geen belangrijke secties over
-- ❌ Kies geen technologieën zonder input van gebruiker
-- ❌ Negeer geen security of performance overwegingen
-- ❌ Creëer geen onrealistische timeline verwachtingen
+- ❌ Don't generate a document without sufficient information
+- ❌ Don't make assumptions without documenting them
+- ❌ Don't skip important sections
+- ❌ Don't choose technologies without user input
+- ❌ Don't ignore security or performance considerations
+- ❌ Don't create unrealistic timeline expectations
 
 ---
 
 ## Example Interaction Flow
 
 ```
-User: /initial "Ik wil een task management app bouwen"
+User: /initial "I want to build a task management app"
 
-AI: Interessant! Laat me je wat vragen stellen om een goed beeld te krijgen:
+AI: Interesting! Let me ask you some questions to get a good picture:
 
-[Gebruikt AskUserQuestion tool]
-Question 1: "Wat is het hoofddoel van deze task management app?"
+[Uses AskUserQuestion tool]
+Question 1: "What is the main goal of this task management app?"
 Options:
-  - Personal productivity (individuele gebruikers)
-  - Team collaboration (teams/bedrijven)
-  - Both (zowel persoonlijk als team gebruik)
+  - Personal productivity (individual users)
+  - Team collaboration (teams/companies)
+  - Both (both personal and team use)
 
-Question 2: "Heb je voorkeur voor een frontend framework?"
+Question 2: "Do you have a preference for a frontend framework?"
 Options:
   - React + Next.js
   - Vue + Nuxt
   - Svelte + SvelteKit
-  - Anders (specificeer)
+  - Other (specify)
 
-Question 3: "Welke backend technologie spreekt je aan?"
+Question 3: "Which backend technology appeals to you?"
 Options:
   - Python (FastAPI)
   - Node.js (Express/NestJS)
-  - Geen voorkeur (stel het beste voor)
+  - No preference (suggest the best)
 
-[Na antwoorden, volgende ronde vragen over features, data model, etc.]
+[After answers, next round of questions about features, data model, etc.]
 
-[Uiteindelijk genereert ARG document]
+[Eventually generates ARG document]
 
-AI: ✅ Initial ARG document gegenereerd: _ce/arg/initial/2024-03-15-task-management-initial-arg.md
+AI: ✅ Initial ARG document generated: _ce/arg/initial/2024-03-15-task-management-initial-arg.md
 
-Het document bevat:
-- Volledige technical stack specificatie
+The document contains:
+- Complete technical stack specification
 - 12 core features (8 must-have, 4 nice-to-have)
-- Data model met 5 entities
+- Data model with 5 entities
 - Security & compliance requirements
 - Development phases (estimated 8 weeks)
 
-Open vragen gedocumenteerd:
-- Integratie met Google Calendar/Outlook?
-- Payment gateway voor premium features?
+Open questions documented:
+- Integration with Google Calendar/Outlook?
+- Payment gateway for premium features?
 
-Volgende stap:
+Next step:
 /generate-initial-prp _ce/arg/initial/2024-03-15-task-management-initial-arg.md
 ```
 
@@ -212,29 +212,29 @@ Volgende stap:
 
 Before generating the final ARG document, ensure:
 
-- [ ] Alle secties van template zijn ingevuld
-- [ ] Technical stack is volledig gespecificeerd
-- [ ] Features zijn geprioriteerd (must/should/nice-to-have)
-- [ ] Data model is beschreven met relaties
-- [ ] Security requirements zijn gespecificeerd
-- [ ] Open vragen zijn gedocumenteerd
-- [ ] Development phases hebben realistische estimaties
-- [ ] Referenties en inspiratie zijn toegevoegd (indien beschikbaar)
-- [ ] Bestandsnaam volgt naming convention
-- [ ] Document is opgeslagen in _ce/arg/initial/
+- [ ] All sections of template are filled in
+- [ ] Technical stack is fully specified
+- [ ] Features are prioritized (must/should/nice-to-have)
+- [ ] Data model is described with relationships
+- [ ] Security requirements are specified
+- [ ] Open questions are documented
+- [ ] Development phases have realistic estimates
+- [ ] References and inspiration are added (if available)
+- [ ] Filename follows naming convention
+- [ ] Document is saved in _ce/arg/initial/
 
 ---
 
 ## Success Criteria
 
-Het /initial commando is succesvol wanneer:
+The /initial command is successful when:
 
-1. ✅ Alle noodzakelijke informatie is verzameld via structured questioning
-2. ✅ Een compleet ARG document is gegenereerd volgens template
-3. ✅ Het document bevat voldoende detail voor PRP generatie
-4. ✅ Open vragen en aannames zijn duidelijk gedocumenteerd
-5. ✅ Gebruiker begrijpt de volgende stappen
+1. ✅ All necessary information is collected via structured questioning
+2. ✅ A complete ARG document is generated according to template
+3. ✅ The document contains sufficient detail for PRP generation
+4. ✅ Open questions and assumptions are clearly documented
+5. ✅ User understands the next steps
 
 ---
 
-**Remember**: De kwaliteit van het Initial ARG document bepaalt de kwaliteit van het hele project. Neem de tijd om alle informatie goed te verzamelen!
+**Remember**: The quality of the Initial ARG document determines the quality of the entire project. Take the time to gather all information properly!
