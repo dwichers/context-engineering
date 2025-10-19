@@ -2,39 +2,39 @@
 
 ## 📌 Feature Metadata
 
-**Feature Number**: [Automatisch gegenereerd nummer op basis van volgorde]
-**Feature Name**: [Korte, beschrijvende naam]
+**Feature Number**: [Automatically generated number based on order]
+**Feature Name**: [Short, descriptive name]
 **Priority**: [Critical / High / Medium / Low]
 **Estimated Complexity**: [Low / Medium / High / Very High]
-**Dependencies**: [Lijst van andere features waar deze feature van afhankelijk is]
+**Dependencies**: [List of other features this feature depends on]
 
 ---
 
 ## 🎯 Feature Overview
 
 ### Feature Description
-[Gedetailleerde beschrijving van wat deze feature doet en waarom het belangrijk is]
+[Detailed description of what this feature does and why it's important]
 
 ### User Story
-**As a** [type gebruiker]
-**I want** [actie/functionaliteit]
-**So that** [voordeel/resultaat]
+**As a** [type of user]
+**I want** [action/functionality]
+**So that** [benefit/result]
 
 ### Business Value
-[Waarom is deze feature belangrijk voor het product/business?]
+[Why is this feature important for the product/business?]
 
 ---
 
 ## ✅ Acceptance Criteria
 
-### Functionele Requirements
-- [ ] [Criterium 1 - wat moet de feature kunnen doen]
-- [ ] [Criterium 2]
-- [ ] [Criterium 3]
-- [ ] [Criterium 4]
+### Functional Requirements
+- [ ] [Criterion 1 - what the feature must be able to do]
+- [ ] [Criterion 2]
+- [ ] [Criterion 3]
+- [ ] [Criterion 4]
 
-### Non-functionele Requirements
-- [ ] [Performance requirement - bijvoorbeeld: response time < 200ms]
+### Non-functional Requirements
+- [ ] [Performance requirement - e.g., response time < 200ms]
 - [ ] [Security requirement]
 - [ ] [Accessibility requirement]
 - [ ] [Usability requirement]
@@ -46,42 +46,42 @@
 ### Affected Components
 
 #### Frontend Components
-- **Component 1**: [Naam van component en wat het doet]
-  - Location: [filepath waar het moet komen]
-  - Responsibility: [wat doet dit component]
-  - Dependencies: [andere components die het gebruikt]
+- **Component 1**: [Component name and what it does]
+  - Location: [filepath where it should go]
+  - Responsibility: [what does this component do]
+  - Dependencies: [other components it uses]
 
-- **Component 2**: [Naam en beschrijving]
+- **Component 2**: [Name and description]
   - Location: [filepath]
   - Responsibility: [...]
   - Dependencies: [...]
 
 #### Backend Components
-- **API Endpoint 1**: [bijvoorbeeld: POST /api/users/register]
-  - Location: [filepath waar het moet komen]
-  - Responsibility: [wat doet deze endpoint]
-  - Request Schema: [beschrijf input]
-  - Response Schema: [beschrijf output]
+- **API Endpoint 1**: [e.g., POST /api/users/register]
+  - Location: [filepath where it should go]
+  - Responsibility: [what does this endpoint do]
+  - Request Schema: [describe input]
+  - Response Schema: [describe output]
 
-- **Service/Business Logic**: [Naam van service]
+- **Service/Business Logic**: [Service name]
   - Location: [filepath]
-  - Responsibility: [wat doet deze service]
+  - Responsibility: [what does this service do]
 
 #### Database Changes
 - **New Tables**:
-  - `table_name`: [beschrijving van nieuwe tabel]
-    - Columns: [lijst van kolommen met types]
-    - Indexes: [welke indexes]
+  - `table_name`: [description of new table]
+    - Columns: [list of columns with types]
+    - Indexes: [which indexes]
     - Relationships: [foreign keys, etc.]
 
 - **Modified Tables**:
-  - `existing_table`: [welke wijzigingen]
-    - Add columns: [nieuwe kolommen]
-    - Modify columns: [gewijzigde kolommen]
-    - Add indexes: [nieuwe indexes]
+  - `existing_table`: [which changes]
+    - Add columns: [new columns]
+    - Modify columns: [modified columns]
+    - Add indexes: [new indexes]
 
 - **Migrations**:
-  - [Beschrijf migratie strategie]
+  - [Describe migration strategy]
 
 ---
 
@@ -89,29 +89,29 @@
 
 ### User Interface Elements
 - **New Pages/Views**:
-  1. [Pagina naam]: [beschrijving van layout en componenten]
-  2. [Pagina naam]: [beschrijving]
+  1. [Page name]: [description of layout and components]
+  2. [Page name]: [description]
 
 - **Modified Pages/Views**:
-  1. [Bestaande pagina]: [wat wordt er gewijzigd]
+  1. [Existing page]: [what is being changed]
 
 ### User Flow
 ```
-[Beschrijf de stappen die een gebruiker doorloopt]
-1. Gebruiker klikt op [...]
-2. Systeem toont [...]
-3. Gebruiker vult [...] in
-4. Systeem valideert en [...]
-5. Gebruiker ziet [...]
+[Describe the steps a user goes through]
+1. User clicks on [...]
+2. System shows [...]
+3. User fills in [...]
+4. System validates and [...]
+5. User sees [...]
 ```
 
 ### Wireframes/Mockups
-- [Link naar Figma/design tool]
-- [Screenshot of beschrijving van UI]
-- [Interactie patterns die gevolgd moeten worden]
+- [Link to Figma/design tool]
+- [Screenshot or UI description]
+- [Interaction patterns to follow]
 
-### Design Patterns te Volgen
-- [Referentie naar bestaande componenten uit de codebase]
+### Design Patterns to Follow
+- [Reference to existing components from codebase]
 - [Design system guidelines]
 - [Accessibility patterns]
 
@@ -125,7 +125,7 @@
 ```yaml
 Method: POST
 Path: /api/v1/resource
-Description: [Wat doet deze endpoint]
+Description: [What this endpoint does]
 
 Headers:
   Authorization: Bearer {token}
@@ -160,13 +160,13 @@ Response (401 Unauthorized):
 ```
 
 #### Endpoint 2
-[Herhaal bovenstaande structuur]
+[Repeat above structure]
 
 ### Modified Endpoints
-- **Endpoint**: [welke endpoint wordt aangepast]
-  - Changes: [wat verandert er]
-  - Backward Compatibility: [is het backward compatible?]
-  - Deprecation Strategy: [indien van toepassing]
+- **Endpoint**: [which endpoint is being modified]
+  - Changes: [what's changing]
+  - Backward Compatibility: [is it backward compatible?]
+  - Deprecation Strategy: [if applicable]
 
 ---
 
@@ -176,7 +176,7 @@ Response (401 Unauthorized):
 
 #### Model 1: [ModelName]
 ```python
-# Voorbeeld voor Python/SQLAlchemy
+# Example for Python/SQLAlchemy
 class ModelName:
     id: UUID
     field1: str
@@ -194,77 +194,77 @@ class ModelName:
 ```
 
 #### Model 2: [ModelName]
-[Herhaal structuur]
+[Repeat structure]
 
 ### Modified Models
-- **Model Name**: [welke wijzigingen]
+- **Model Name**: [which changes]
   - New fields: [...]
   - Modified fields: [...]
-  - Removed fields: [... met migratie strategie]
+  - Removed fields: [... with migration strategy]
 
 ### Validation Rules
-- `field1`: [validatie regels - bijvoorbeeld: required, min length 3, max length 50]
-- `field2`: [validatie regels - bijvoorbeeld: must be positive integer]
-- `field3`: [validatie regels - bijvoorbeeld: valid email format]
+- `field1`: [validation rules - e.g., required, min length 3, max length 50]
+- `field2`: [validation rules - e.g., must be positive integer]
+- `field3`: [validation rules - e.g., valid email format]
 
 ---
 
 ## 🔒 Security Considerations
 
 ### Authentication & Authorization
-- **Who can access this feature?**: [Welke rollen/gebruikers]
-- **Permission checks needed**: [Welke checks op welke niveau]
-- **Sensitive data**: [Welke data moet extra beschermd worden]
+- **Who can access this feature?**: [Which roles/users]
+- **Permission checks needed**: [Which checks at which level]
+- **Sensitive data**: [Which data needs extra protection]
 
 ### Input Validation
 - [ ] All user inputs are validated
 - [ ] SQL injection prevention
 - [ ] XSS prevention
-- [ ] CSRF protection (voor state-changing operations)
+- [ ] CSRF protection (for state-changing operations)
 
 ### Data Protection
-- [ ] Encryption at rest: [welke data]
+- [ ] Encryption at rest: [which data]
 - [ ] Encryption in transit: [HTTPS, TLS]
 - [ ] PII handling: [personal identifiable information]
-- [ ] Audit logging: [wat moet gelogd worden]
+- [ ] Audit logging: [what should be logged]
 
 ---
 
 ## 📈 Performance Considerations
 
 ### Expected Load
-- **Concurrent Users**: [aantal verwachte simultane gebruikers]
-- **Requests per Second**: [verwachte RPS]
-- **Data Volume**: [hoeveel data wordt verwerkt]
+- **Concurrent Users**: [number of expected simultaneous users]
+- **Requests per Second**: [expected RPS]
+- **Data Volume**: [how much data is processed]
 
 ### Performance Targets
-- **API Response Time**: [bijvoorbeeld: p95 < 200ms]
-- **Page Load Time**: [bijvoorbeeld: < 2 seconden]
-- **Database Query Time**: [bijvoorbeeld: < 50ms]
+- **API Response Time**: [e.g., p95 < 200ms]
+- **Page Load Time**: [e.g., < 2 seconds]
+- **Database Query Time**: [e.g., < 50ms]
 
 ### Optimization Strategies
 - [ ] Database indexing strategy
 - [ ] Caching strategy (Redis, CDN, etc.)
 - [ ] Pagination for large datasets
-- [ ] Lazy loading voor UI
+- [ ] Lazy loading for UI
 - [ ] Query optimization
-- [ ] Background jobs voor heavy operations
+- [ ] Background jobs for heavy operations
 
 ---
 
 ## 🧪 Testing Strategy
 
 ### Unit Tests
-- **Coverage Target**: [bijvoorbeeld: > 80%]
+- **Coverage Target**: [e.g., > 80%]
 - **Key Test Cases**:
-  1. [Test case beschrijving - happy path]
+  1. [Test case description - happy path]
   2. [Test case - edge case]
   3. [Test case - error handling]
 
 ### Integration Tests
 - **Test Scenarios**:
   1. [End-to-end scenario 1]
-  2. [Integration met external service]
+  2. [Integration with external service]
   3. [Database operations]
 
 ### E2E Tests
@@ -273,73 +273,73 @@ class ModelName:
   2. [Complete user journey 2]
 
 ### Manual Test Cases
-1. [Test case 1]: [stappen om handmatig te testen]
-2. [Test case 2]: [stappen]
+1. [Test case 1]: [steps to manually test]
+2. [Test case 2]: [steps]
 
 ---
 
 ## 🔗 Dependencies & Integration
 
 ### Internal Dependencies
-- **Features**: [Lijst van andere features die eerst geïmplementeerd moeten zijn]
-  - Feature #[nummer]: [waarom is dit een dependency]
+- **Features**: [List of other features that must be implemented first]
+  - Feature #[number]: [why is this a dependency]
 
-- **Components**: [Bestaande componenten die gebruikt worden]
-  - Component naam: [filepath en hoe het gebruikt wordt]
+- **Components**: [Existing components that are used]
+  - Component name: [filepath and how it's used]
 
 ### External Dependencies
 - **Libraries/Packages**:
-  - `package-name@version`: [waarom nodig, wat doet het]
-  - `package-name@version`: [beschrijving]
+  - `package-name@version`: [why needed, what it does]
+  - `package-name@version`: [description]
 
 - **APIs/Services**:
-  - [Service naam]: [wat wordt er mee gedaan]
+  - [Service name]: [what it's used for]
   - API Documentation: [link]
-  - Rate Limits: [indien van toepassing]
+  - Rate Limits: [if applicable]
 
 ### Breaking Changes
-- [ ] Geen breaking changes
-- [ ] Breaking changes met migratie pad:
-  - [Beschrijf breaking change en hoe te migreren]
+- [ ] No breaking changes
+- [ ] Breaking changes with migration path:
+  - [Describe breaking change and how to migrate]
 
 ---
 
 ## 🚀 Implementation Plan
 
-### Step 1: [Fase naam - bijvoorbeeld: Database Setup]
+### Step 1: [Phase name - e.g., Database Setup]
 **Tasks**:
 - [ ] Create migration for new tables
 - [ ] Add indexes
 - [ ] Test migration locally
-**Estimated Time**: [bijvoorbeeld: 2 uur]
+**Estimated Time**: [e.g., 2 hours]
 
-### Step 2: [Fase naam - bijvoorbeeld: Backend Implementation]
+### Step 2: [Phase name - e.g., Backend Implementation]
 **Tasks**:
 - [ ] Create data models/schemas
 - [ ] Implement business logic
 - [ ] Create API endpoints
 - [ ] Add validation
 - [ ] Write unit tests
-**Estimated Time**: [bijvoorbeeld: 1 dag]
+**Estimated Time**: [e.g., 1 day]
 
-### Step 3: [Fase naam - bijvoorbeeld: Frontend Implementation]
+### Step 3: [Phase name - e.g., Frontend Implementation]
 **Tasks**:
 - [ ] Create UI components
 - [ ] Implement state management
 - [ ] Add API integration
 - [ ] Add form validation
 - [ ] Write component tests
-**Estimated Time**: [bijvoorbeeld: 1 dag]
+**Estimated Time**: [e.g., 1 day]
 
-### Step 4: [Fase naam - bijvoorbeeld: Integration & Testing]
+### Step 4: [Phase name - e.g., Integration & Testing]
 **Tasks**:
 - [ ] Integration tests
 - [ ] E2E tests
 - [ ] Manual testing
 - [ ] Bug fixes
-**Estimated Time**: [bijvoorbeeld: 4 uur]
+**Estimated Time**: [e.g., 4 hours]
 
-### Step 5: [Fase naam - bijvoorbeeld: Documentation & Deployment]
+### Step 5: [Phase name - e.g., Documentation & Deployment]
 **Tasks**:
 - [ ] Update API documentation
 - [ ] Update user documentation
@@ -347,17 +347,17 @@ class ModelName:
 - [ ] Deploy to staging
 - [ ] QA testing
 - [ ] Deploy to production
-**Estimated Time**: [bijvoorbeeld: 2 uur]
+**Estimated Time**: [e.g., 2 hours]
 
 ---
 
 ## 📚 Documentation Requirements
 
 ### Code Documentation
-- [ ] Inline comments voor complexe logic
+- [ ] Inline comments for complex logic
 - [ ] Function/method docstrings
 - [ ] Type hints/annotations
-- [ ] README updates indien nodig
+- [ ] README updates if needed
 
 ### API Documentation
 - [ ] OpenAPI/Swagger specs updated
@@ -365,8 +365,8 @@ class ModelName:
 - [ ] Error codes documented
 
 ### User Documentation
-- [ ] Feature beschrijving in user guide
-- [ ] Screenshots/video's indien relevant
+- [ ] Feature description in user guide
+- [ ] Screenshots/videos if relevant
 - [ ] FAQ updates
 - [ ] In-app help/tooltips
 
@@ -375,38 +375,38 @@ class ModelName:
 ## 🐛 Error Handling
 
 ### Expected Errors
-1. **Error Type**: [bijvoorbeeld: Validation Error]
-   - **Trigger**: [wat veroorzaakt deze error]
-   - **User Message**: [wat ziet de gebruiker]
-   - **Handling**: [hoe wordt het afgehandeld]
-   - **Logging**: [wat wordt er gelogd]
+1. **Error Type**: [e.g., Validation Error]
+   - **Trigger**: [what causes this error]
+   - **User Message**: [what the user sees]
+   - **Handling**: [how it's handled]
+   - **Logging**: [what gets logged]
 
-2. **Error Type**: [bijvoorbeeld: Network Error]
+2. **Error Type**: [e.g., Network Error]
    - **Trigger**: [...]
    - **User Message**: [...]
    - **Handling**: [retry logic, fallback]
    - **Logging**: [...]
 
 ### Edge Cases
-1. [Edge case 1]: [hoe wordt dit afgehandeld]
-2. [Edge case 2]: [hoe wordt dit afgehandeld]
+1. [Edge case 1]: [how is this handled]
+2. [Edge case 2]: [how is this handled]
 
 ---
 
 ## 🔄 Rollback Strategy
 
 ### Rollback Triggers
-- [Wanneer moet er een rollback gebeuren]
-- [Welke metrics/errors triggeren een rollback]
+- [When should a rollback happen]
+- [Which metrics/errors trigger a rollback]
 
 ### Rollback Steps
-1. [Stap 1 - bijvoorbeeld: Revert deployment]
-2. [Stap 2 - bijvoorbeeld: Rollback database migration]
-3. [Stap 3 - bijvoorbeeld: Clear caches]
+1. [Step 1 - e.g., Revert deployment]
+2. [Step 2 - e.g., Rollback database migration]
+3. [Step 3 - e.g., Clear caches]
 
 ### Data Migration Rollback
-- [Hoe om te gaan met data die tijdens de feature is aangemaakt]
-- [Backward compatibility overwegingen]
+- [How to handle data created during the feature]
+- [Backward compatibility considerations]
 
 ---
 
@@ -414,79 +414,79 @@ class ModelName:
 
 ### Quantitative Metrics
 - **Usage Metrics**:
-  - [Metric 1 - bijvoorbeeld: Number of users using feature per day]
-  - [Metric 2 - bijvoorbeeld: Conversion rate]
+  - [Metric 1 - e.g., Number of users using feature per day]
+  - [Metric 2 - e.g., Conversion rate]
 
 - **Performance Metrics**:
-  - [Metric 1 - bijvoorbeeld: Average response time]
-  - [Metric 2 - bijvoorbeeld: Error rate]
+  - [Metric 1 - e.g., Average response time]
+  - [Metric 2 - e.g., Error rate]
 
 ### Qualitative Metrics
-- **User Feedback**: [Hoe wordt feedback verzameld]
+- **User Feedback**: [How is feedback collected]
 - **User Satisfaction**: [Survey, NPS, etc.]
 
 ### Monitoring & Alerts
-- [ ] Setup monitoring voor key metrics
-- [ ] Configure alerts voor error rates
+- [ ] Setup monitoring for key metrics
+- [ ] Configure alerts for error rates
 - [ ] Setup performance monitoring
-- [ ] Log aggregation voor debugging
+- [ ] Log aggregation for debugging
 
 ---
 
 ## 🤔 Open Questions
 
 ### Technical Questions
-1. [Vraag over implementatie detail dat nog onduidelijk is]
-2. [Vraag over technische keuze]
+1. [Question about implementation detail that's still unclear]
+2. [Question about technical choice]
 
 ### Design Questions
-1. [Vraag over UI/UX beslissing]
-2. [Vraag over user flow]
+1. [Question about UI/UX decision]
+2. [Question about user flow]
 
 ### Business Questions
-1. [Vraag over scope of prioriteit]
-2. [Vraag over edge case handling]
+1. [Question about scope or priority]
+2. [Question about edge case handling]
 
 ---
 
 ## 🔗 References
 
 ### Code Examples
-- [Link naar vergelijkbare feature in codebase]
-- [Link naar external code example]
-- [Repository met goede patterns]
+- [Link to similar feature in codebase]
+- [Link to external code example]
+- [Repository with good patterns]
 
 ### Documentation
-- [Link naar library docs]
-- [Link naar API docs]
-- [Link naar design system]
+- [Link to library docs]
+- [Link to API docs]
+- [Link to design system]
 
 ### Design References
-- [Link naar Figma/design]
-- [Link naar vergelijkbare UI in andere apps]
+- [Link to Figma/design]
+- [Link to similar UI in other apps]
 
 ---
 
 ## 💡 Additional Notes
 
-[Ruimte voor extra opmerkingen, constraints, of belangrijke context die niet in bovenstaande secties past]
+[Space for extra comments, constraints, or important context that doesn't fit in the above sections]
 
 ---
 
 ## ✅ Completion Checklist
 
-- [ ] Feature beschrijving is compleet en duidelijk
-- [ ] Acceptance criteria zijn gedefinieerd
-- [ ] Technical specifications zijn uitgewerkt
-- [ ] UI/UX is beschreven (met wireframes/mockups indien beschikbaar)
-- [ ] API specifications zijn gedocumenteerd
-- [ ] Data model wijzigingen zijn beschreven
-- [ ] Security considerations zijn geadresseerd
-- [ ] Performance considerations zijn gedocumenteerd
-- [ ] Testing strategy is uitgewerkt
-- [ ] Dependencies zijn geïdentificeerd
-- [ ] Implementation plan is gemaakt
-- [ ] Error handling is beschreven
-- [ ] Success metrics zijn gedefinieerd
-- [ ] Open vragen zijn gedocumenteerd
-- [ ] References zijn toegevoegd
+- [ ] Feature description is complete and clear
+- [ ] Acceptance criteria are defined
+- [ ] Technical specifications are detailed
+- [ ] UI/UX is described (with wireframes/mockups if available)
+- [ ] API specifications are documented
+- [ ] Data model changes are described
+- [ ] Security considerations are addressed
+- [ ] Performance considerations are documented
+- [ ] Testing strategy is detailed
+- [ ] Dependencies are identified
+- [ ] Implementation plan is created
+- [ ] Error handling is described
+- [ ] Success metrics are defined
+- [ ] Open questions are documented
+- [ ] References are added
