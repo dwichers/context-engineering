@@ -1,10 +1,10 @@
 # Generate Feature ARG Document
 
-Genereer een gestructureerd Feature ARG (Application Requirements Generator) document voor een nieuwe feature.
+Generate a structured Feature ARG (Application Requirements Generator) document for a new feature.
 
 ## Feature Description: $ARGUMENTS
 
-Dit bevat de beschrijving van de feature die toegevoegd moet worden aan de applicatie.
+This contains the description of the feature that should be added to the application.
 
 ---
 
@@ -37,56 +37,56 @@ Analyze the user's feature description:
 
 ### Step 3: Interactive Questioning
 
-Stel gerichte vragen om een compleet beeld te krijgen. Gebruik de template `_ce/arg/feature/template/feature-arg-template.md` als leidraad.
+Ask targeted questions to get a complete picture. Use the template `_ce/arg/feature/template/feature-arg-template.md` as a guide.
 
-**Belangrijke vraaggebieden**:
+**Important question areas**:
 
 1. **Feature Scope & Goals**
-   - Wat is het exacte doel van deze feature?
-   - Welk probleem lost het op voor gebruikers?
-   - Hoe verhoudt het zich tot bestaande features?
-   - Is dit een must-have of nice-to-have?
+   - What is the exact goal of this feature?
+   - What problem does it solve for users?
+   - How does it relate to existing features?
+   - Is this a must-have or nice-to-have?
 
 2. **User Story & Acceptance Criteria**
-   - Wie is de gebruiker?
-   - Wat wil de gebruiker doen?
-   - Waarom wil de gebruiker dit?
-   - Wat zijn de success criteria?
+   - Who is the user?
+   - What does the user want to do?
+   - Why does the user want this?
+   - What are the success criteria?
 
 3. **Technical Implementation**
-   - Welke componenten moeten aangepast worden?
-   - Welke nieuwe components nodig?
-   - Database wijzigingen nodig?
-   - API endpoints nodig?
+   - Which components need to be modified?
+   - What new components are needed?
+   - Database changes needed?
+   - API endpoints needed?
 
 4. **UI/UX Specifications**
-   - Nieuwe pagina's/views nodig?
-   - Wijzigingen aan bestaande UI?
-   - Design voorbeelden of wireframes?
-   - Interactie patronen?
+   - New pages/views needed?
+   - Changes to existing UI?
+   - Design examples or wireframes?
+   - Interaction patterns?
 
 5. **Data & API**
-   - Welke data moet opgeslagen worden?
-   - Database schema wijzigingen?
-   - Nieuwe API endpoints?
-   - External API integraties?
+   - What data needs to be stored?
+   - Database schema changes?
+   - New API endpoints?
+   - External API integrations?
 
 6. **Dependencies**
-   - Afhankelijk van andere features?
-   - Nieuwe libraries/packages nodig?
-   - Breaking changes mogelijk?
+   - Dependent on other features?
+   - New libraries/packages needed?
+   - Breaking changes possible?
 
 7. **Testing & Performance**
-   - Welke test scenarios?
+   - What test scenarios?
    - Performance requirements?
    - Edge cases?
    - Error handling scenarios?
 
-**Strategie**:
-- Stel 3-5 vragen per ronde
-- Gebruik AskUserQuestion voor multiple choice
-- Itereer totdat volledig beeld
-- Document onzekerheden
+**Strategy**:
+- Ask 3-5 questions per round
+- Use AskUserQuestion for multiple choice
+- Iterate until complete picture
+- Document uncertainties
 
 ### Step 4: Determine Feature Number & Dependencies
 
@@ -146,7 +146,7 @@ Stel gerichte vragen om een compleet beeld te krijgen. Gebruik de template `_ce/
 
 2. Show summary to user:
    ```
-   ✅ Feature ARG gegenereerd: _ce/arg/feature/[filename].md
+   ✅ Feature ARG generated: _ce/arg/feature/[filename].md
 
    Feature: [Name]
    Number: [X]
@@ -164,7 +164,7 @@ Stel gerichte vragen om een compleet beeld te krijgen. Gebruik de template `_ce/
    - [Question 1]
    - [Question 2]
 
-   Volgende stap:
+   Next step:
    /generate-feature-prp _ce/arg/feature/[filename].md
    ```
 
@@ -223,37 +223,37 @@ Before finalizing Feature ARG:
 ```
 User: /generate-feature-arg "Add email notifications when tasks are assigned"
 
-AI: Ik ga een Feature ARG document maken voor email notificaties.
-    Laat me eerst wat context verzamelen...
+AI: I'm going to create a Feature ARG document for email notifications.
+    Let me first gather some context...
 
-[Leest initial ARG en bestaande features]
+[Reads initial ARG and existing features]
 
-AI: Ik zie dat:
-    - Project gebruikt FastAPI backend
-    - Er zijn al 2 features: (1) User auth, (2) Task management
-    - Database heeft User en Task tables
+AI: I see that:
+    - Project uses FastAPI backend
+    - There are already 2 features: (1) User auth, (2) Task management
+    - Database has User and Task tables
 
-    Dit wordt feature #003.
+    This will be feature #003.
 
-[Stelt vragen via AskUserQuestion]
+[Asks questions via AskUserQuestion]
 
-Question 1: "Wanneer moeten email notificaties verstuurd worden?"
+Question 1: "When should email notifications be sent?"
 Options:
-  - Direct bij task assignment
-  - Dagelijkse digest van nieuwe tasks
+  - Immediately on task assignment
+  - Daily digest of new tasks
   - Both (real-time + daily digest)
 
-Question 2: "Welke email service provider?"
+Question 2: "Which email service provider?"
 Options:
   - SendGrid
   - Mailgun
   - AWS SES
   - Resend
-  - Andere (specificeer)
+  - Other (specify)
 
-[Meer vragen over template, content, unsubscribe, etc.]
+[More questions about template, content, unsubscribe, etc.]
 
-AI: ✅ Feature ARG gegenereerd: _ce/arg/feature/003-email-notifications-feature-arg.md
+AI: ✅ Feature ARG generated: _ce/arg/feature/003-email-notifications-feature-arg.md
 
 Feature: Email Notifications
 Number: 003
@@ -272,7 +272,7 @@ Open questions:
 - Rate limiting for email sending?
 - Email templates versioning strategy?
 
-Volgende stap:
+Next step:
 /generate-feature-prp _ce/arg/feature/003-email-notifications-feature-arg.md
 ```
 
@@ -280,16 +280,16 @@ Volgende stap:
 
 ## Success Criteria
 
-Het /generate-feature-arg commando is succesvol wanneer:
+The /generate-feature-arg command is successful when:
 
-1. ✅ Feature number correct bepaald op basis van bestaande features
-2. ✅ Alle dependencies geïdentificeerd
-3. ✅ Compleet ARG document volgens template
-4. ✅ Voldoende detail voor PRP generatie
-5. ✅ Integration points met bestaande code duidelijk
-6. ✅ Open vragen en aannames gedocumenteerd
-7. ✅ Gebruiker begrijpt volgende stappen
+1. ✅ Feature number correctly determined based on existing features
+2. ✅ All dependencies identified
+3. ✅ Complete ARG document according to template
+4. ✅ Sufficient detail for PRP generation
+5. ✅ Integration points with existing code clear
+6. ✅ Open questions and assumptions documented
+7. ✅ User understands next steps
 
 ---
 
-**Remember**: Een goede Feature ARG moet naadloos integreren met bestaande features en codebase!
+**Remember**: A good Feature ARG must integrate seamlessly with existing features and codebase!
