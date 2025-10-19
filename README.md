@@ -2,8 +2,6 @@
 
 An AI-driven development workflow system that helps you transform an application idea into a fully structured, implemented project with validated code.
 
-> **Context Engineering is 10x better than prompt engineering and 100x better than vibe coding.**
-
 ---
 
 ## 📚 Table of Contents
