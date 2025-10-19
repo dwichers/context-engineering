@@ -8,17 +8,17 @@
 
 ## 🎯 Purpose
 
-Dit PRP document beschrijft **ALLEEN** de project foundation setup. Business features zijn gescheiden in aparte Feature ARG documenten.
+This PRP document describes **ONLY** the project foundation setup. Business features are separated into separate Feature ARG documents.
 
 **Foundation Scope** (ONLY these in this PRP):
-- ✅ Project structuur en configuratie
+- ✅ Project structure and configuration
 - ✅ Development environment setup
-- ✅ Database setup met BASIC schema (users, auth tables only)
+- ✅ Database setup with BASIC schema (users, auth tables only)
 - ✅ Authentication & Authorization (user registration, login, roles)
 - ✅ Core API structure (routing, middleware, error handling)
 - ✅ Frontend foundation (routing, layout, basic UI components)
 - ✅ CI/CD pipeline
-- ✅ Docker configuratie
+- ✅ Docker configuration
 - ✅ Documentation structure
 
 **NOT in Foundation** (These are separate features):
@@ -35,40 +35,40 @@ Dit PRP document beschrijft **ALLEEN** de project foundation setup. Business fea
 
 ## Core Principles
 
-1. **Context is King**: Alle nodige documentatie, voorbeelden en caveats zijn meegenomen
-2. **Validation Loops**: Executable tests/lints voor self-validation
-3. **Information Dense**: Keywords en patterns uit de codebase en ARG
-4. **Progressive Success**: Start simpel, valideer, dan enhance
-5. **Global Rules**: Volg alle regels in CLAUDE.md
+1. **Context is King**: All necessary documentation, examples and caveats are included
+2. **Validation Loops**: Executable tests/lints for self-validation
+3. **Information Dense**: Keywords and patterns from the codebase and ARG
+4. **Progressive Success**: Start simple, validate, then enhance
+5. **Global Rules**: Follow all rules in CLAUDE.md
 
 ---
 
 ## 📋 Project Overview
 
 ### Project Name & Description
-[Haal uit ARG document]
+[Extract from ARG document]
 
 ### Technology Stack
 
 #### Frontend
-- **Framework**: [uit ARG]
-- **Styling**: [uit ARG]
-- **State Management**: [uit ARG]
-- **UI Components**: [uit ARG]
-- **Build Tool**: [uit ARG]
+- **Framework**: [from ARG]
+- **Styling**: [from ARG]
+- **State Management**: [from ARG]
+- **UI Components**: [from ARG]
+- **Build Tool**: [from ARG]
 
 #### Backend
-- **Framework**: [uit ARG]
-- **Database**: [uit ARG]
-- **ORM**: [uit ARG]
-- **Authentication**: [uit ARG]
-- **API Type**: [uit ARG]
+- **Framework**: [from ARG]
+- **Database**: [from ARG]
+- **ORM**: [from ARG]
+- **Authentication**: [from ARG]
+- **API Type**: [from ARG]
 
 #### Infrastructure
-- **Frontend Hosting**: [uit ARG]
-- **Backend Hosting**: [uit ARG]
-- **CI/CD**: [uit ARG]
-- **Containerization**: [uit ARG]
+- **Frontend Hosting**: [from ARG]
+- **Backend Hosting**: [from ARG]
+- **CI/CD**: [from ARG]
+- **Containerization**: [from ARG]
 
 ---
 
@@ -78,49 +78,49 @@ Dit PRP document beschrijft **ALLEEN** de project foundation setup. Business fea
 
 ```yaml
 # Framework Documentation
-- url: [Link naar main framework docs]
+- url: [Link to main framework docs]
   why: Setup guides, best practices, project structure
-  critical: [Belangrijke secties om te lezen]
+  critical: [Important sections to read]
 
-- url: [Link naar database/ORM docs]
+- url: [Link to database/ORM docs]
   why: Schema design, migrations, queries
-  critical: [Belangrijke secties]
+  critical: [Important sections]
 
-- url: [Link naar authentication library docs]
+- url: [Link to authentication library docs]
   why: Setup, configuration, best practices
   critical: [Security considerations]
 
 # Deployment & Infrastructure
-- url: [Link naar hosting platform docs]
+- url: [Link to hosting platform docs]
   why: Deployment configuration, environment setup
   critical: [Deployment strategies]
 
 # UI/UX Resources
-- url: [Link naar component library docs]
+- url: [Link to component library docs]
   why: Component usage, theming, customization
   critical: [Setup and configuration]
 
-- url: [Link naar design system indien van toepassing]
+- url: [Link to design system if applicable]
   why: Design patterns, color schemes, typography
 
 # Examples from Codebase
 - file: _ce/examples/[relevant-example-1]
-  why: [Pattern om te volgen - bijvoorbeeld: project structure]
+  why: [Pattern to follow - e.g., project structure]
 
 - file: _ce/examples/[relevant-example-2]
-  why: [Pattern om te volgen - bijvoorbeeld: authentication setup]
+  why: [Pattern to follow - e.g., authentication setup]
 ```
 
 ### Known Gotchas & Library Quirks
 
 ```python
-# CRITICAL: [Framework naam] requires [specific setup]
+# CRITICAL: [Framework name] requires [specific setup]
 # CRITICAL: [Database] migrations must be run in order
 # CRITICAL: [Auth library] requires environment variables set before import
 # CRITICAL: [Deployment platform] needs specific build commands
 # CRITICAL: [Styling framework] requires PostCSS configuration
 # GOTCHA: [Specific version compatibility issue]
-# GOTCHA: [Common pitfall met dit framework]
+# GOTCHA: [Common pitfall with this framework]
 ```
 
 ---
