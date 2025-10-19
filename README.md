@@ -1,43 +1,43 @@
-# 🚀 Gefaseerde Applicatieontwikkeling met Context Engineering
+# 🚀 Phased Application Development with Context Engineering
 
-Een AI-gestuurd ontwikkel workflow systeem dat je ondersteunt bij het omzetten van een applicatie-idee naar een volledig gestructureerd, geïmplementeerd project met gevalideerde code.
+An AI-driven development workflow system that helps you transform an application idea into a fully structured, implemented project with validated code.
 
-> **Context Engineering is 10x beter dan prompt engineering en 100x beter dan vibe coding.**
+> **Context Engineering is 10x better than prompt engineering and 100x better than vibe coding.**
 
 ---
 
-## 📚 Inhoudsopgave
+## 📚 Table of Contents
 
-- [Wat is Context Engineering?](#wat-is-context-engineering)
-- [Snelstart](#-snelstart)
-- [Workflow Overzicht](#-workflow-overzicht)
-- [Repository Structuur](#-repository-structuur)
-- [Gedetailleerde Workflow](#-gedetailleerde-workflow)
+- [What is Context Engineering?](#what-is-context-engineering)
+- [Quick Start](#-quick-start)
+- [Workflow Overview](#-workflow-overview)
+- [Repository Structure](#-repository-structure)
+- [Detailed Workflow](#-detailed-workflow)
 - [Slash Commands Reference](#-slash-commands-reference)
 - [Best Practices](#-best-practices)
-- [Voorbeelden](#-voorbeelden)
+- [Examples](#-examples)
 - [FAQ](#-faq)
 
 ---
 
-## Wat is Context Engineering?
+## What is Context Engineering?
 
-Context Engineering is een discipline die draait om het engineeren van **volledige context** voor AI coding assistants, zodat ze voldoende informatie hebben om end-to-end taken succesvol uit te voeren.
+Context Engineering is a discipline focused on engineering **complete context** for AI coding assistants, ensuring they have sufficient information to successfully execute end-to-end tasks.
 
-### Waarom Context Engineering?
+### Why Context Engineering?
 
-**Traditionele benaderingen:**
-- ❌ **Vibe Coding**: "Bouw me een app" → onvoorspelbare resultaten
-- ❌ **Prompt Engineering**: Focus op slimme bewoordingen → beperkte scope
-- ❌ **Ad-hoc AI gebruik**: Geen structuur → veel iteraties nodig
+**Traditional approaches:**
+- ❌ **Vibe Coding**: "Build me an app" → unpredictable results
+- ❌ **Prompt Engineering**: Focus on clever wording → limited scope
+- ❌ **Ad-hoc AI usage**: No structure → many iterations needed
 
 **Context Engineering:**
-- ✅ **Gestructureerd proces**: Van idee → ARG → PRP → gevalideerde code
-- ✅ **Uitgebreide context**: Alle docs, patterns, gotchas geïncludeerd
-- ✅ **Self-validating**: AI kan zijn eigen werk testen en verbeteren
-- ✅ **One-pass success**: Genoeg context voor correcte implementatie in één keer
+- ✅ **Structured process**: From idea → ARG → PRP → validated code
+- ✅ **Comprehensive context**: All docs, patterns, gotchas included
+- ✅ **Self-validating**: AI can test and improve its own work
+- ✅ **One-pass success**: Enough context for correct implementation on first try
 
-### De Kernprincipes
+### Core Principles
 
 1. **Context is King**: Include ALL necessary documentation, examples, and caveats
 2. **Validation Loops**: Provide executable tests/lints the AI can run and fix
@@ -46,37 +46,37 @@ Context Engineering is een discipline die draait om het engineeren van **volledi
 
 ---
 
-## 🎯 Snelstart
+## 🎯 Quick Start
 
-### Vereisten
+### Requirements
 
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) geïnstalleerd
-- Git repository gekloneerd
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) installed
+- Git repository cloned
 
-### Stap 1: Start met een Idee
+### Step 1: Start with an Idea
 
 ```bash
-# In Claude Code, gebruik het /initial commando
-/initial "Ik wil een task management applicatie bouwen voor teams"
+# In Claude Code, use the /initial command
+/initial "I want to build a task management application for teams"
 ```
 
-Claude stelt interactieve vragen om je idee volledig uit te werken:
-- Welke technologie stack?
-- Welke core features?
-- Wie zijn de gebruikers?
+Claude asks interactive questions to fully develop your idea:
+- Which technology stack?
+- Which core features?
+- Who are the users?
 - Security requirements?
 - Performance targets?
 
-**Resultaat**: `_ce/arg/initial/YYYY-MM-DD-[project-name]-initial-arg.md`
+**Result**: `_ce/arg/initial/YYYY-MM-DD-[project-name]-initial-arg.md`
 
-### Stap 2: Genereer Initial PRP
+### Step 2: Generate Initial PRP
 
 ```bash
-# Genereer implementation blueprint
-/generate-initial-prp _ce/arg/initial/[je-initial-arg-file].md
+# Generate implementation blueprint
+/generate-initial-prp _ce/arg/initial/[your-initial-arg-file].md
 ```
 
-Claude doet uitgebreid research en maakt een PRP met:
+Claude performs extensive research and creates a PRP with:
 - Complete implementation blueprint
 - Framework documentation references
 - Database schema design
@@ -84,16 +84,16 @@ Claude doet uitgebreid research en maakt een PRP met:
 - Testing strategy
 - Validation commands
 
-**Resultaat**: `_ce/prp/initial/YYYY-MM-DD-[project-name]-initial-prp.md`
+**Result**: `_ce/prp/initial/YYYY-MM-DD-[project-name]-initial-prp.md`
 
-### Stap 3: Voer Initial Setup Uit
+### Step 3: Execute Initial Setup
 
 ```bash
-# Implementeer de foundation
-/execute-initial _ce/prp/initial/[je-initial-prp-file].md
+# Implement the foundation
+/execute-initial _ce/prp/initial/[your-initial-prp-file].md
 ```
 
-Claude implementeert:
+Claude implements:
 - ✅ Project structure
 - ✅ Database setup & migrations
 - ✅ Authentication & authorization
@@ -104,54 +104,54 @@ Claude implementeert:
 - ✅ Docker configuration
 - ✅ Complete documentation
 
-**Validation**: Alle tests slagen, code is production-ready!
+**Validation**: All tests pass, code is production-ready!
 
-### Stap 4: Voeg Features Toe
+### Step 4: Add Features
 
 ```bash
-# Feature 1: Genereer ARG
+# Feature 1: Generate ARG
 /generate-feature-arg "Add email notifications when tasks are assigned"
 
-# Feature 1: Genereer PRP
+# Feature 1: Generate PRP
 /generate-feature-prp _ce/arg/feature/001-email-notifications-feature-arg.md
 
-# Feature 1: Implementeer
+# Feature 1: Implement
 /execute-feature _ce/prp/feature/001-email-notifications-feature-prp.md
 ```
 
-**Herhaal voor elke feature!**
+**Repeat for each feature!**
 
 ---
 
-## 🎯 Workflow Overzicht
+## 🎯 Workflow Overview
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                   CONTEXT ENGINEERING WORKFLOW                   │
 └─────────────────────────────────────────────────────────────────┘
 
-1️⃣ IDEE FASE
-   ├─ Beschrijf je applicatie idee
-   └─ /initial "[beschrijving]"
+1️⃣ IDEA PHASE
+   ├─ Describe your application idea
+   └─ /initial "[description]"
       └─> _ce/arg/initial/[project]-initial-arg.md
 
 2️⃣ INITIAL SETUP PLANNING + FEATURE SEPARATION
    ├─ /generate-initial-prp [initial-arg-path]
    │
-   ├─ STAP 2.1: Research
+   ├─ STEP 2.1: Research
    │    ├─ Research frameworks, best practices
    │    └─ Design database schema
    │
-   ├─ STAP 2.2: FEATURE SEPARATION (KRITIEK!)
-   │    ├─ Analyseer ALLE features uit Initial ARG
-   │    ├─ Foundation features → blijven in Initial PRP
+   ├─ STEP 2.2: FEATURE SEPARATION (CRITICAL!)
+   │    ├─ Analyze ALL features from Initial ARG
+   │    ├─ Foundation features → stay in Initial PRP
    │    ├─ Business features → separate Feature ARGs
    │    └─> CREATE: _ce/arg/feature/001-[name]-feature-arg.md
    │         CREATE: _ce/arg/feature/002-[name]-feature-arg.md
    │         CREATE: _ce/arg/feature/003-[name]-feature-arg.md
    │         ... (all business features)
    │
-   └─ STAP 2.3: Initial PRP (foundation only!)
+   └─ STEP 2.3: Initial PRP (foundation only!)
       └─> _ce/prp/initial/[project]-initial-prp.md
 
 3️⃣ INITIAL SETUP EXECUTION (Foundation Only!)
@@ -161,7 +161,7 @@ Claude implementeert:
    └─> ✅ Production-ready foundation (NO business features yet!)
 
 4️⃣ FEATURE DEVELOPMENT
-   Voor elk Feature ARG (auto-generated in stap 2.2):
+   For each Feature ARG (auto-generated in step 2.2):
 
    ├─ A: Feature ARG already exists from step 2.2!
    │    └─> _ce/arg/feature/[number]-[name]-feature-arg.md
@@ -180,28 +180,28 @@ Claude implementeert:
         ├─ Write & run tests
         └─> ✅ Feature complete & validated
 
-5️⃣ ITERATIE
-   └─ Herhaal stap 4 voor elk volgend feature (in numbered order!)
+5️⃣ ITERATION
+   └─ Repeat step 4 for each next feature (in numbered order!)
 
 ┌─────────────────────────────────────────────────────────────────┐
-│                      RESULTAAT: VOLLEDIGE APP                    │
-│  - Gestructureerd ontwikkeld                                     │
-│  - Volledig getest                                               │
+│                    RESULT: COMPLETE APP                          │
+│  - Structured development                                        │
+│  - Fully tested                                                  │
 │  - Production-ready                                              │
-│  - Gedocumenteerd                                                │
+│  - Documented                                                    │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 📁 Repository Structuur
+## 📁 Repository Structure
 
 ```
 context-engineering-claude/
 ├── _ce/                                    # Context Engineering directory
 │   ├── .claude/
 │   │   ├── commands/                       # Slash commands
-│   │   │   ├── initial.md                  # /initial commando
+│   │   │   ├── initial.md                  # /initial command
 │   │   │   ├── generate-initial-prp.md     # /generate-initial-prp
 │   │   │   ├── generate-feature-arg.md     # /generate-feature-arg
 │   │   │   ├── generate-feature-prp.md     # /generate-feature-prp
@@ -233,33 +233,33 @@ context-engineering-claude/
 │       └── README.md
 │
 ├── CLAUDE.md                               # Global AI guidelines
-├── README.md                               # Dit bestand
-└── [je-project-bestanden-hier]/           # Gegenereerde applicatie code
+├── README.md                               # This file
+└── [your-project-files-here]/             # Generated application code
 ```
 
 ---
 
-## 🔄 Gedetailleerde Workflow
+## 🔄 Detailed Workflow
 
-### Fase 1: Initial ARG Generatie
+### Phase 1: Initial ARG Generation
 
-**Commando**: `/initial "[project description]"`
+**Command**: `/initial "[project description]"`
 
-**Wat gebeurt er:**
-1. Claude stelt gerichte vragen over je project:
-   - Project type & doelgroep
-   - Technische stack voorkeuren
-   - Core functionaliteiten
-   - UI/UX verwachtingen
+**What happens:**
+1. Claude asks targeted questions about your project:
+   - Project type & target audience
+   - Technical stack preferences
+   - Core functionalities
+   - UI/UX expectations
    - Data model
    - Security & compliance
    - Performance targets
 
-2. Claude vult de Initial ARG template in met:
+2. Claude fills the Initial ARG template with:
    - ✅ Project overview
    - ✅ Complete technical stack
-   - ✅ Geprioriteerde features (must/should/nice-to-have)
-   - ✅ Data model met entities en relaties
+   - ✅ Prioritized features (must/should/nice-to-have)
+   - ✅ Data model with entities and relationships
    - ✅ Security requirements
    - ✅ Development phases
    - ✅ Deployment strategy
@@ -267,36 +267,36 @@ context-engineering-claude/
 **Output**: `_ce/arg/initial/YYYY-MM-DD-[project-name]-initial-arg.md`
 
 **Tips**:
-- Wees specifiek in je antwoorden
-- Voeg referenties toe naar inspiratie
-- Document open vragen duidelijk
+- Be specific in your answers
+- Add references to inspiration
+- Document open questions clearly
 
 ---
 
-### Fase 2: Initial PRP Generatie + Feature Separation
+### Phase 2: Initial PRP Generation + Feature Separation
 
-**Commando**: `/generate-initial-prp _ce/arg/initial/[file].md`
+**Command**: `/generate-initial-prp _ce/arg/initial/[file].md`
 
-**Wat gebeurt er:**
+**What happens:**
 
-#### Stap 2.1: Research & Planning
+#### Step 2.1: Research & Planning
 
 1. **Research Phase**:
-   - Zoekt framework documentation
-   - Vindt best practices voor de tech stack
-   - Analyseert vergelijkbare open-source projecten
-   - Identificeert common gotchas
-   - Zoekt deployment guides
+   - Searches framework documentation
+   - Finds best practices for the tech stack
+   - Analyzes comparable open-source projects
+   - Identifies common gotchas
+   - Searches deployment guides
 
-#### Stap 2.2: Feature Separation (**KRITIEK!**)
+#### Step 2.2: Feature Separation (**CRITICAL!**)
 
-**Dit is de belangrijkste stap om te voorkomen dat het Initial PRP te groot wordt!**
+**This is the most important step to prevent the Initial PRP from becoming too large!**
 
 2. **Feature Separation**:
-   - Analyseert ALLE features uit het Initial ARG
-   - Categoriseert in **Foundation** vs **Business Features**
+   - Analyzes ALL features from the Initial ARG
+   - Categorizes into **Foundation** vs **Business Features**
 
-   **Foundation** (blijft in Initial PRP):
+   **Foundation** (stays in Initial PRP):
    - ✅ Project structure
    - ✅ Database setup (basic schema)
    - ✅ Authentication & user management
@@ -304,7 +304,7 @@ context-engineering-claude/
    - ✅ Frontend foundation
    - ✅ CI/CD & Docker
 
-   **Business Features** (worden Feature ARGs):
+   **Business Features** (become Feature ARGs):
    - ❌ All business logic
    - ❌ External integrations
    - ❌ Advanced UI features
@@ -313,12 +313,12 @@ context-engineering-claude/
    - ❌ etc.
 
 3. **Generate Feature ARG Documents**:
-   - Voor ELKE business feature wordt een Feature ARG aangemaakt
+   - For EACH business feature, a Feature ARG is created
    - Numbered sequentially (001, 002, 003, etc.)
    - Ordered by logical dependencies
-   - Saved in `_ce/arg/feature/[number]-[name]-feature-arg.md`
+   - Saved in `_ce/arg/feature/[number]-[feature-name]-feature-arg.md`
 
-#### Stap 2.3: Blueprint Creation (Foundation Only!)
+#### Step 2.3: Blueprint Creation (Foundation Only!)
 
 4. **Initial PRP Blueprint** (ONLY foundation):
    - Task 1: Project initialization
@@ -341,11 +341,11 @@ context-engineering-claude/
 - `_ce/prp/initial/YYYY-MM-DD-[project-name]-initial-prp.md` (foundation only!)
 - `_ce/arg/feature/001-[feature]-feature-arg.md` (business feature 1)
 - `_ce/arg/feature/002-[feature]-feature-arg.md` (business feature 2)
-- ... (alle business features gescheiden)
+- ... (all business features separated)
 
-**Confidence Score**: 8-10/10 voor production-ready implementation
+**Confidence Score**: 8-10/10 for production-ready implementation
 
-**Bevat**:
+**Contains**:
 ```yaml
 Documentation URLs:
   - Official framework docs with specific sections
@@ -368,11 +368,11 @@ Gotchas:
 
 ---
 
-### Fase 3: Initial Setup Execution
+### Phase 3: Initial Setup Execution
 
-**Commando**: `/execute-initial _ce/prp/initial/[file].md`
+**Command**: `/execute-initial _ce/prp/initial/[file].md`
 
-**Wat gebeurt er:**
+**What happens:**
 1. **Preparation**:
    - Reads entire PRP
    - Understands all tasks
@@ -409,20 +409,20 @@ Gotchas:
    - ✅ All tests passing (>80% coverage)
    - ✅ Documentation complete
 
-**Duration**: Afhankelijk van project complexiteit (meestal 15-30 minuten)
+**Duration**: Depending on project complexity (usually 15-30 minutes)
 
 ---
 
-### Fase 4: Feature Development Cycle
+### Phase 4: Feature Development Cycle
 
-#### 4.1: Feature ARG Generatie
+#### 4.1: Feature ARG Generation
 
-**Commando**: `/generate-feature-arg "[feature description]"`
+**Command**: `/generate-feature-arg "[feature description]"`
 
-**Wat gebeurt er:**
+**What happens:**
 1. **Context Gathering**:
-   - Reads initial ARG voor project context
-   - Lists existing features voor dependency analysis
+   - Reads initial ARG for project context
+   - Lists existing features for dependency analysis
    - Determines next feature number
    - Analyzes current codebase structure
 
@@ -433,7 +433,7 @@ Gotchas:
    - UI/UX specifications
    - API requirements
    - Database changes needed
-   - Dependencies op andere features
+   - Dependencies on other features
    - Testing scenarios
 
 3. **Generates Feature ARG**:
@@ -462,11 +462,11 @@ Gotchas:
 
 ---
 
-#### 4.2: Feature PRP Generatie
+#### 4.2: Feature PRP Generation
 
-**Commando**: `/generate-feature-prp _ce/arg/feature/[file].md`
+**Command**: `/generate-feature-prp _ce/arg/feature/[file].md`
 
-**Wat gebeurt er:**
+**What happens:**
 1. **Loads Context**:
    - Feature ARG
    - Initial ARG (for project stack)
@@ -535,15 +535,15 @@ Gotchas:
 
 **Output**: `_ce/prp/feature/[number]-[name]-feature-prp.md`
 
-**Confidence Score**: 7-10/10 afhankelijk van feature complexity
+**Confidence Score**: 7-10/10 depending on feature complexity
 
 ---
 
 #### 4.3: Feature Execution
 
-**Commando**: `/execute-feature _ce/prp/feature/[file].md`
+**Command**: `/execute-feature _ce/prp/feature/[file].md`
 
-**Wat gebeurt er:**
+**What happens:**
 1. **Pre-flight Checks**:
    - Verify dependencies implemented
    - Check for file conflicts
@@ -595,7 +595,7 @@ Gotchas:
    - ✅ Integrated with existing features
    - ✅ Documentation updated
 
-**Duration**: Afhankelijk van feature complexity (meestal 10-45 minuten per feature)
+**Duration**: Depending on feature complexity (usually 10-45 minutes per feature)
 
 ---
 
@@ -603,22 +603,22 @@ Gotchas:
 
 ### `/initial "[project description]"`
 
-**Doel**: Genereer een Initial ARG document voor je project idee.
+**Purpose**: Generate an Initial ARG document for your project idea.
 
 **Usage**:
 ```bash
-/initial "Een task management platform voor remote teams met real-time collaboration"
+/initial "A task management platform for remote teams with real-time collaboration"
 ```
 
 **Output**: `_ce/arg/initial/YYYY-MM-DD-[project-name]-initial-arg.md`
 
-**Volgende stap**: `/generate-initial-prp [generated-file]`
+**Next step**: `/generate-initial-prp [generated-file]`
 
 ---
 
 ### `/generate-initial-prp [initial-arg-path]`
 
-**Doel**: Genereer een Initial PRP met volledige implementation blueprint.
+**Purpose**: Generate an Initial PRP with complete implementation blueprint.
 
 **Usage**:
 ```bash
@@ -627,20 +627,20 @@ Gotchas:
 
 **Output**: `_ce/prp/initial/YYYY-MM-DD-[project-name]-initial-prp.md`
 
-**Volgende stap**: `/execute-initial [generated-file]`
+**Next step**: `/execute-initial [generated-file]`
 
 ---
 
 ### `/execute-initial [initial-prp-path]`
 
-**Doel**: Implementeer de complete initial project setup.
+**Purpose**: Implement the complete initial project setup.
 
 **Usage**:
 ```bash
 /execute-initial _ce/prp/initial/2024-03-15-task-platform-initial-prp.md
 ```
 
-**Resultaat**: Complete working application foundation met:
+**Result**: Complete working application foundation with:
 - Database & migrations
 - Authentication & authorization
 - Backend API
@@ -650,13 +650,13 @@ Gotchas:
 - Docker setup
 - Documentation
 
-**Volgende stap**: Begin met features!
+**Next step**: Start with features!
 
 ---
 
 ### `/generate-feature-arg "[feature description]"`
 
-**Doel**: Genereer een Feature ARG voor een nieuwe feature.
+**Purpose**: Generate a Feature ARG for a new feature.
 
 **Usage**:
 ```bash
@@ -665,13 +665,13 @@ Gotchas:
 
 **Output**: `_ce/arg/feature/[number]-[name]-feature-arg.md`
 
-**Volgende stap**: `/generate-feature-prp [generated-file]`
+**Next step**: `/generate-feature-prp [generated-file]`
 
 ---
 
 ### `/generate-feature-prp [feature-arg-path]`
 
-**Doel**: Genereer een Feature PRP met implementation blueprint.
+**Purpose**: Generate a Feature PRP with implementation blueprint.
 
 **Usage**:
 ```bash
@@ -680,111 +680,111 @@ Gotchas:
 
 **Output**: `_ce/prp/feature/003-realtime-notifications-feature-prp.md`
 
-**Volgende stap**: `/execute-feature [generated-file]`
+**Next step**: `/execute-feature [generated-file]`
 
 ---
 
 ### `/execute-feature [feature-prp-path]`
 
-**Doel**: Implementeer de feature volgens het PRP.
+**Purpose**: Implement the feature according to the PRP.
 
 **Usage**:
 ```bash
 /execute-feature _ce/prp/feature/003-realtime-notifications-feature-prp.md
 ```
 
-**Resultaat**: Complete feature implementation met tests en validatie.
+**Result**: Complete feature implementation with tests and validation.
 
-**Volgende stap**: Volgende feature!
+**Next step**: Next feature!
 
 ---
 
 ## ⭐ Best Practices
 
-### Voor Initial ARG
+### For Initial ARG
 ✅ **DO**:
-- Wees specifiek over requirements
-- Voeg referenties toe naar inspiratie
-- Denk na over toekomstige schaalbaarheid
-- Documenteer aannames duidelijk
-- Prioriteer features realistisch
+- Be specific about requirements
+- Add references to inspiration
+- Think about future scalability
+- Document assumptions clearly
+- Prioritize features realistically
 
 ❌ **DON'T**:
-- Vage beschrijvingen geven
-- Te veel features tegelijk willen
-- Security negeren
-- Geen testingstrategie hebben
+- Give vague descriptions
+- Want too many features at once
+- Ignore security
+- Skip testing strategy
 
-### Voor Feature ARGs
+### For Feature ARGs
 ✅ **DO**:
-- Check dependencies op andere features
-- Denk aan backward compatibility
-- Definieer clear acceptance criteria
+- Check dependencies on other features
+- Think about backward compatibility
+- Define clear acceptance criteria
 - Plan database migrations
-- Documenteer edge cases
+- Document edge cases
 
 ❌ **DON'T**:
-- Features in isolatie bouwen
-- Breaking changes maken zonder migratiepad
-- API specificaties skippen
-- Error handling vergeten
+- Build features in isolation
+- Make breaking changes without migration path
+- Skip API specifications
+- Forget error handling
 
-### Voor Execution
+### For Execution
 ✅ **DO**:
-- Lees het volledige PRP eerst
-- Volg PATTERN references exact
-- Run validation na elke task
-- Fix issues direct (niet opsparen)
+- Read the complete PRP first
+- Follow PATTERN references exactly
+- Run validation after each task
+- Fix issues immediately (don't accumulate)
 - Write tests alongside implementation
 
 ❌ **DON'T**:
-- Tasks overslaan of shortcuts nemen
-- Verder gaan met failing validation
-- CRITICAL notes negeren
-- Linting/type errors ignoreren
-- Tests achteraf schrijven
+- Skip tasks or take shortcuts
+- Continue with failing validation
+- Ignore CRITICAL notes
+- Ignore linting/type errors
+- Write tests afterwards
 
-### Algemene Tips
-1. **Itereer op ARGs**: Neem de tijd om goede ARGs te maken
-2. **Vertrouw het proces**: De workflow is ontworpen voor succes
-3. **Valideer progressief**: Niet alleen aan het eind
-4. **Documenteer tijdens ontwikkeling**: Niet achteraf
-5. **Gebruik examples**: Plaats goede voorbeelden in `_ce/examples/`
+### General Tips
+1. **Iterate on ARGs**: Take time to make good ARGs
+2. **Trust the process**: The workflow is designed for success
+3. **Validate progressively**: Not just at the end
+4. **Document during development**: Not afterwards
+5. **Use examples**: Place good examples in `_ce/examples/`
 
 ---
 
-## 💡 Voorbeelden
+## 💡 Examples
 
-### Voorbeeld 1: E-commerce Platform
+### Example 1: E-commerce Platform
 
 ```bash
-# Stap 1: Initial ARG
-/initial "Een e-commerce platform met product catalogus, shopping cart, checkout, en admin panel"
+# Step 1: Initial ARG
+/initial "An e-commerce platform with product catalog, shopping cart, checkout, and admin panel"
 
-# Claude stelt vragen over:
+# Claude asks about:
 # - Payment providers (Stripe, PayPal?)
 # - Inventory management
 # - User roles (customer, admin, vendor?)
 # - Shipping integration
 # - Product categories/filtering
 
-# Resultaat: _ce/arg/initial/2024-03-15-ecommerce-platform-initial-arg.md
+# Result: _ce/arg/initial/2024-03-15-ecommerce-platform-initial-arg.md
 
-# Stap 2: Generate Initial PRP
+# Step 2: Generate Initial PRP
 /generate-initial-prp _ce/arg/initial/2024-03-15-ecommerce-platform-initial-arg.md
 
-# Claude researcht:
+# Claude researches:
 # - E-commerce frameworks
 # - Payment gateway integrations
-# - Best practices voor cart implementation
-# - Security voor checkout process
+# - Best practices for cart implementation
+# - Security for checkout process
 
-# Resultaat: _ce/prp/initial/2024-03-15-ecommerce-platform-initial-prp.md
+# Result: _ce/prp/initial/2024-03-15-ecommerce-platform-initial-prp.md
 
-# Stap 3: Execute Initial Setup
+# Step 3: Execute Initial Setup
 /execute-initial _ce/prp/initial/2024-03-15-ecommerce-platform-initial-prp.md
 
-# Claude implementeert:
+# Claude implements:
 # ✅ User authentication (customer, admin roles)
 # ✅ Database (products, orders, cart, users)
 # ✅ Basic API endpoints
@@ -792,7 +792,7 @@ Gotchas:
 # ✅ Frontend routing
 # ✅ All tests passing
 
-# Stap 4-6: Features
+# Steps 4-6: Features
 /generate-feature-arg "Product catalog with search and filtering"
 # → Feature #001
 
@@ -806,18 +806,18 @@ Gotchas:
 /generate-feature-prp _ce/arg/feature/001-product-catalog-feature-arg.md
 /execute-feature _ce/prp/feature/001-product-catalog-feature-prp.md
 
-# ... repeat voor #002, #003, etc.
+# ... repeat for #002, #003, etc.
 ```
 
 ---
 
-### Voorbeeld 2: SaaS Dashboard
+### Example 2: SaaS Dashboard
 
 ```bash
-# Initial setup voor analytics dashboard
-/initial "Een SaaS analytics dashboard met real-time data visualization en team collaboration"
+# Initial setup for analytics dashboard
+/initial "A SaaS analytics dashboard with real-time data visualization and team collaboration"
 
-# Features kunnen zijn:
+# Features might be:
 # - #001: Real-time data streaming (WebSockets)
 # - #002: Interactive charts (Chart.js/D3.js)
 # - #003: Team workspace management
@@ -825,77 +825,77 @@ Gotchas:
 # - #005: Custom dashboard builder
 # - #006: Email alerts & notifications
 
-# Elk feature krijgt:
-# - ARG document met requirements
-# - PRP document met implementation
-# - Validation na execution
+# Each feature gets:
+# - ARG document with requirements
+# - PRP document with implementation
+# - Validation after execution
 ```
 
 ---
 
 ## ❓ FAQ
 
-### Q: Moet ik de hele workflow volgen?
+### Q: Do I have to follow the entire workflow?
 
-A: Voor best results: ja! Maar je kunt ook:
-- Alleen ARG genereren voor requirements documentatie
-- ARG + PRP gebruiken zonder execution (als guide)
-- Direct naar feature development gaan als foundation al bestaat
+A: For best results: yes! But you can also:
+- Only generate ARG for requirements documentation
+- Use ARG + PRP without execution (as a guide)
+- Go directly to feature development if foundation already exists
 
-### Q: Kan ik de templates aanpassen?
+### Q: Can I customize the templates?
 
-A: Absoluut! Templates zijn in `_ce/*/template/` en kunnen aangepast worden aan je needs.
+A: Absolutely! Templates are in `_ce/*/template/` and can be adapted to your needs.
 
-### Q: Wat als ik geen tech stack voorkeur heb?
+### Q: What if I don't have a tech stack preference?
 
-A: Claude zal suggesties doen gebaseerd op je requirements. Je kunt ook vragen om pros/cons van verschillende stacks.
+A: Claude will make suggestions based on your requirements. You can also ask for pros/cons of different stacks.
 
-### Q: Hoe lang duurt een complete initial setup?
+### Q: How long does a complete initial setup take?
 
-A: Afhankelijk van complexity, meestal 15-45 minuten voor een production-ready foundation.
+A: Depending on complexity, usually 15-45 minutes for a production-ready foundation.
 
-### Q: Kan ik midstream stoppen en later verder?
+### Q: Can I stop midstream and continue later?
 
-A: Ja! Alle state is opgeslagen in de gegenereerde documenten. Je kunt altijd verder waar je gebleven bent.
+A: Yes! All state is saved in the generated documents. You can always continue where you left off.
 
-### Q: Wat als de AI een fout maakt?
+### Q: What if the AI makes a mistake?
 
-A: De validation loops zorgen ervoor dat fouten worden gedetecteerd. De AI zal itereren totdat validation slaagt. Als dat niet lukt, kun je handmatig fixen.
+A: The validation loops ensure errors are detected. The AI will iterate until validation passes. If that doesn't work, you can fix manually.
 
-### Q: Kan ik bestaande code gebruiken?
+### Q: Can I use existing code?
 
-A: Ja! Place voorbeelden in `_ce/examples/` en refereer ernaar in je ARG documenten.
+A: Yes! Place examples in `_ce/examples/` and reference them in your ARG documents.
 
-### Q: Werkt dit voor alle programming languages?
+### Q: Does this work for all programming languages?
 
-A: De workflow werkt voor alle languages. Templates kunnen aangepast worden voor specifieke stacks (Python, TypeScript, Go, etc.).
+A: The workflow works for all languages. Templates can be adapted for specific stacks (Python, TypeScript, Go, etc.).
 
-### Q: Hoe zit het met deployment?
+### Q: What about deployment?
 
-A: De initial PRP bevat deployment strategie en Docker setup. Sommige features kunnen ook deployment impacts hebben.
+A: The initial PRP contains deployment strategy and Docker setup. Some features may also have deployment impacts.
 
-### Q: Kan ik features in een andere volgorde implementeren?
+### Q: Can I implement features in a different order?
 
-A: Zolang dependencies worden gerespecteerd, kun je features in elke volgorde doen. Het numbering systeem is voor organisatie, niet voor verplichting.
+A: As long as dependencies are respected, you can do features in any order. The numbering system is for organization, not obligation.
 
 ---
 
-## 🎯 Volgende Stappen
+## 🎯 Next Steps
 
-1. **Start je eerste project**:
+1. **Start your first project**:
    ```bash
-   /initial "[jouw project idee]"
+   /initial "[your project idea]"
    ```
 
-2. **Exploreer de templates**:
-   - Bekijk `_ce/arg/initial/template/initial-arg-template.md`
-   - Bekijk `_ce/prp/initial/template/initial-prp-template.md`
+2. **Explore the templates**:
+   - View `_ce/arg/initial/template/initial-arg-template.md`
+   - View `_ce/prp/initial/template/initial-prp-template.md`
 
-3. **Voeg voorbeelden toe**:
-   - Place code voorbeelden in `_ce/examples/`
-   - Refereer ernaar in je ARGs
+3. **Add examples**:
+   - Place code examples in `_ce/examples/`
+   - Reference them in your ARGs
 
-4. **Bouw iets geweldigs**! 🚀
+4. **Build something awesome**! 🚀
 
 ---
 
@@ -909,7 +909,7 @@ A: Zolang dependencies worden gerespecteerd, kun je features in elke volgorde do
 
 ## 🤝 Contributing
 
-Contributions zijn welkom! Zie `CONTRIBUTING.md` voor details.
+Contributions are welcome! See `CONTRIBUTING.md` for details.
 
 ---
 
@@ -921,4 +921,4 @@ Contributions zijn welkom! Zie `CONTRIBUTING.md` voor details.
 
 **Built with ❤️ using Context Engineering**
 
-*Stop met "vibe coding" - start met gestructureerde, gevalideerde development!*
+*Stop "vibe coding" - start with structured, validated development!*
