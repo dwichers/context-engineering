@@ -2,7 +2,7 @@
 
 ## 🔄 Context Engineering Workflow Awareness
 
-**IMPORTANT**: This repository uses a structured Context Engineering workflow for building applications.
+This repository uses a structured Context Engineering workflow for building applications. Use this workflow to structure your idea, generate initial and feature ARG (Application Requirements Generator) documents, then generate PRP (Product Requirements Prompts) documents and execute the foundation and features.
 
 ### Workflow Structure
 - **`_ce/`** - Main Context Engineering directory containing all workflow files
@@ -18,24 +18,15 @@
 ### Available Workflow Commands
 
 **Initial Project Setup**:
-1. `/initial "[project description]"` - Generate Initial ARG document
+1. `/initial [project description]` - Generate Initial ARG document
 2. `/generate-initial-prp [initial-arg-path]` - Generate Initial PRP + Separate Business Features into Feature ARGs
 3. `/execute-initial [initial-prp-path]` - Implement foundation only (NOT business features)
+4. `/execute-feature [feature-prp-path]` - Implement found feature from initial PRP process
 
-**Feature Development**:
-1. Feature ARGs are AUTO-GENERATED during `/generate-initial-prp` (step 2.2!)
-2. `/generate-feature-prp [feature-arg-path]` - Generate Feature PRP for a separated feature
-3. `/execute-feature [feature-prp-path]` - Implement feature
-4. (Optional) `/generate-feature-arg "[description]"` - Add NEW features later
-
-### When to Use This Workflow
-
-- **Starting a new project**: Use `/initial` to structure your idea
-- **Generate Initial PRP**: `/generate-initial-prp` will AUTOMATICALLY separate business features
-- **Execute Foundation**: `/execute-initial` implements ONLY the foundation (auth, DB, core API)
-- **Implement Features**: Use auto-generated Feature ARGs from step 2 for business logic
-- **Adding NEW features later**: Use `/generate-feature-arg` for additional features
-- **Want structured, validated implementation**: Execute PRPs with built-in validation
+**Additional Feature Development**:
+1. `/generate-feature-arg [feature description]` - Generate Feature ARG for a new feature
+2. `/generate-feature-prp [feature-arg-path]` - Generate Feature PRP for a new feature
+3. `/execute-feature [feature-prp-path]` - Implement new feature
 
 ### Critical: Feature Separation
 
@@ -273,5 +264,3 @@ When modifying existing code:
 > The result: **One-pass implementation success through comprehensive context.**
 
 ---
-
-**Last Updated**: [Auto-updated by workflow]
