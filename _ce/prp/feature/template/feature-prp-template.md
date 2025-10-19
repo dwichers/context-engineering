@@ -10,7 +10,7 @@
 
 ## 🎯 Purpose
 
-Dit PRP document beschrijft de complete implementatie van feature: [Feature Name]
+This PRP document describes the complete implementation of feature: [Feature Name]
 
 ## Core Principles
 
