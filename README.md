@@ -28,7 +28,8 @@ context-engineering-claude/
 │   │       ├── generate-feature-arg.md
 │   │       ├── generate-feature-prp.md
 │   │       ├── execute-initial.md
-│   │       └── execute-feature.md
+│   │       ├── execute-feature.md
+│   │       └── generate-claude.md # Update CLAUDE.md with project info
 │   ├── arg/                       # Requirements documents
 │   │   ├── initial/               # Initial project requirements
 │   │   │   └── template/          # Template for initial ARG
@@ -133,6 +134,19 @@ Creates a new Feature ARG through interactive questions, then follow Phase 4.
 
 ---
 
+### Updating CLAUDE.md with Project Information
+
+**Command**: `/generate-claude`
+
+**What it does**:
+- Analyzes your project structure and existing ARG/PRP documents
+- Extracts technology stack, dependencies, and project-specific patterns
+- Updates `CLAUDE.md` with project-specific information while preserving the generic workflow foundation
+- Provides Claude Code with essential context about your specific project
+
+
+---
+
 ## Key Concepts
 
 ### ARG (Application Requirements Generator)
@@ -179,6 +193,7 @@ Defines **HOW** to build it:
 | `/generate-feature-arg` | Define new feature | Feature description | Feature ARG |
 | `/generate-feature-prp` | Create feature blueprint | Feature ARG path | Feature PRP |
 | `/execute-feature` | Build feature | Feature PRP path | Working feature |
+| `/generate-claude` | Update CLAUDE.md | None (auto-detects) | Updated CLAUDE.md |
 
 ---
 
@@ -264,6 +279,7 @@ Features that **stay in foundation**:
 3. **Fix issues immediately** - don't accumulate technical debt
 4. **Follow patterns** from PRPs and existing code
 5. **Don't skip tests** - they catch issues early
+6. **Keep CLAUDE.md updated** - Run `/generate-claude` after major changes to ensure Claude Code has current project context
 
 ### Common Issues
 
