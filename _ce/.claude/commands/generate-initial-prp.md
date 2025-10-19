@@ -1,10 +1,10 @@
 # Generate Initial PRP Document
 
-Genereer een uitgebreid Initial PRP (Product Requirements Prompt) document op basis van een Initial ARG document.
+Generate a comprehensive Initial PRP (Product Requirements Prompt) document based on an Initial ARG document.
 
 ## ARG Document Path: $ARGUMENTS
 
-Dit moet het pad zijn naar het initial ARG document: `_ce/arg/initial/[filename].md`
+This must be the path to the initial ARG document: `_ce/arg/initial/[filename].md`
 
 ---
 
@@ -18,38 +18,38 @@ Dit moet het pad zijn naar het initial ARG document: `_ce/arg/initial/[filename]
    ```
 
 2. **Validate completeness**:
-   - Check of alle belangrijke secties zijn ingevuld
-   - Identificeer missing information
-   - Als kritieke informatie ontbreekt, vraag gebruiker om aanvulling
+   - Check if all important sections are filled in
+   - Identify missing information
+   - If critical information is missing, ask user for completion
 
 3. **Extract key information**:
-   - Project naam en beschrijving
+   - Project name and description
    - Complete technical stack
-   - Core features lijst
-   - Data model en entities
+   - Core features list
+   - Data model and entities
    - Security requirements
    - Performance targets
    - Development phases
 
 ### Step 2: Research Phase
 
-**CRITICAL**: Uitgebreid research is essentieel voor een goed PRP.
+**CRITICAL**: Extensive research is essential for a good PRP.
 
 #### 2.1 Codebase Analysis
 
-Als er een bestaande codebase is:
-- Search voor vergelijkbare patterns
-- Identificeer project structure conventions
+If there's an existing codebase:
+- Search for similar patterns
+- Identify project structure conventions
 - Note existing testing patterns
 - Check deployment configurations
 
 #### 2.2 Framework & Library Research
 
-Voor elke technology in de stack:
+For each technology in the stack:
 
 1. **Framework Documentation**:
    ```yaml
-   # Bijvoorbeeld voor FastAPI:
+   # Example for FastAPI:
    - url: https://fastapi.tiangolo.com/
      sections:
        - Project Structure
@@ -64,18 +64,18 @@ Voor elke technology in de stack:
    ```
 
 2. **Best Practices Search**:
-   - Zoek naar "[framework] project structure best practices"
-   - Zoek naar "[framework] production deployment"
-   - Zoek naar "[framework] testing strategies"
+   - Search for "[framework] project structure best practices"
+   - Search for "[framework] production deployment"
+   - Search for "[framework] testing strategies"
 
 3. **Common Pitfalls**:
-   - Search voor "[framework] common mistakes"
-   - Search voor "[framework] gotchas"
+   - Search for "[framework] common mistakes"
+   - Search for "[framework] gotchas"
    - Document version compatibility issues
 
 #### 2.3 Integration Research
 
-Voor alle external services/APIs uit ARG:
+For all external services/APIs from ARG:
 - API documentation URLs
 - Authentication methods
 - Rate limits
@@ -84,30 +84,30 @@ Voor alle external services/APIs uit ARG:
 
 #### 2.4 Similar Projects Research
 
-Search voor open-source projecten die vergelijkbaar zijn:
-- GitHub repositories met goede architecture
-- Starter templates voor de tech stack
+Search for open-source projects that are similar:
+- GitHub repositories with good architecture
+- Starter templates for the tech stack
 - Example implementations
 
-Sla relevante links op in het PRP.
+Save relevant links in the PRP.
 
 #### 2.5 Examples Folder Check
 
-Check `_ce/examples/` voor:
-- Relevante code voorbeelden
+Check `_ce/examples/` for:
+- Relevant code examples
 - UI components
 - API patterns
 - Testing patterns
 
 ### Step 3: Feature Separation (CRITICAL!)
 
-**BELANGRIJKSTE STAP**: Identificeer en scheid features die NIET tot de foundation behoren.
+**MOST IMPORTANT STEP**: Identify and separate features that do NOT belong to the foundation.
 
-#### 3.1 Analyseer Features uit ARG
+#### 3.1 Analyze Features from ARG
 
-Uit de Initial ARG, categoriseer ALLE features in:
+From the Initial ARG, categorize ALL features into:
 
-**A. FOUNDATION (blijft in Initial PRP)**:
+**A. FOUNDATION (stays in Initial PRP)**:
 - ✅ Project structure & configuration
 - ✅ Database setup & basic schema
 - ✅ Authentication & Authorization (user management)
@@ -118,13 +118,13 @@ Uit de Initial ARG, categoriseer ALLE features in:
 - ✅ Docker setup
 - ✅ Documentation structure
 
-**B. FEATURES (worden Feature ARGs)**:
-- ❌ Business logic features (alles wat niet tot auth/basis hoort)
+**B. FEATURES (become Feature ARGs)**:
+- ❌ Business logic features (everything not auth/basic)
 - ❌ Advanced UI features
 - ❌ External integrations (email, payment, etc.)
 - ❌ Reporting/analytics features
 - ❌ Admin panels (beyond basic CRUD)
-- ❌ Notifications systemen
+- ❌ Notification systems
 - ❌ File uploads/storage
 - ❌ Search functionality
 - ❌ Real-time features (WebSockets, etc.)
@@ -132,10 +132,10 @@ Uit de Initial ARG, categoriseer ALLE features in:
 
 #### 3.2 Create Feature ARG Documents
 
-Voor ELKE feature in categorie B:
+For EACH feature in category B:
 
 1. **Determine feature number**:
-   - Check `_ce/arg/feature/` voor existing features
+   - Check `_ce/arg/feature/` for existing features
    - Assign next sequential number
    - Order by logical dependency (001, 002, 003, etc.)
 
@@ -144,13 +144,13 @@ Voor ELKE feature in categorie B:
    Read _ce/arg/feature/template/feature-arg-template.md
    ```
 
-3. **Fill Feature ARG** met informatie uit Initial ARG:
+3. **Fill Feature ARG** with information from Initial ARG:
    - Feature name & description
    - Priority (from Initial ARG priorities)
-   - Dependencies (bepaal welke features eerst moeten)
+   - Dependencies (determine which features must come first)
    - Technical specs (extracted from Initial ARG)
    - Acceptance criteria
-   - Data model wijzigingen
+   - Data model changes
    - API endpoints
    - UI components
 
@@ -160,11 +160,11 @@ Voor ELKE feature in categorie B:
    Format: 001-user-profile-management-feature-arg.md
    ```
 
-5. **Repeat voor ALLE features** in categorie B
+5. **Repeat for ALL features** in category B
 
 #### 3.3 Inform User
 
-Na het scheiden van features, informeer de gebruiker:
+After separating features, inform the user:
 
 ```
 🔍 Feature Separation Complete!
@@ -194,7 +194,7 @@ Recommended Implementation Order:
    - (repeat for each feature)
 ```
 
-**CRITICAL**: Het Initial PRP mag ALLEEN de foundation bevatten. Alle business features MOETEN gescheiden worden!
+**CRITICAL**: The Initial PRP should ONLY contain the foundation. All business features MUST be separated!
 
 ---
 
@@ -205,19 +205,19 @@ Recommended Implementation Order:
    Read _ce/prp/initial/template/initial-prp-template.md
    ```
 
-2. **Fill all sections** met informatie uit:
+2. **Fill all sections** with information from:
    - ARG document (ONLY foundation parts)
    - Research findings
    - Framework documentation
    - Best practices
 
-**IMPORTANT**: Het Initial PRP bevat ALLEEN de foundation - NIET de separated features!
+**IMPORTANT**: The Initial PRP contains ONLY the foundation - NOT the separated features!
 
 ---
 
 ### Step 5: Create Implementation Blueprint
 
-Dit is het belangrijkste deel - gedetailleerde tasks met:
+This is the most important part - detailed tasks with:
 
 #### Task 1: Project Initialization
 - Directory structure creation
@@ -279,13 +279,13 @@ Dit is het belangrijkste deel - gedetailleerde tasks met:
 - Architecture documentation
 - Deployment guide
 
-**Voor elke task**:
-- Specificeer PATTERN from examples or framework
-- Lijst FILES to create/modify
-- Geef PSEUDOCODE voor critical parts
-- Specificeer VALIDATION steps
+**For each task**:
+- Specify PATTERN from examples or framework
+- List FILES to create/modify
+- Provide PSEUDOCODE for critical parts
+- Specify VALIDATION steps
 
-**REMINDER**: Alleen foundation tasks! Business features zijn al gescheiden in Step 3.
+**REMINDER**: Only foundation tasks! Business features are already separated in Step 3.
 
 ---
 
@@ -343,33 +343,33 @@ Document CRITICAL information:
 
 ### Step 9: Quality Check & Confidence Score
 
-Beoordeel het PRP op:
-- [ ] Alle context included (docs, examples, gotchas)
-- [ ] Validation gates zijn executable
-- [ ] References naar existing patterns
-- [ ] Clear implementation path voor elke task
+Assess the PRP on:
+- [ ] All context included (docs, examples, gotchas)
+- [ ] Validation gates are executable
+- [ ] References to existing patterns
+- [ ] Clear implementation path for each task
 - [ ] Error handling documented
 - [ ] Security considerations addressed
 - [ ] Performance targets specified
 
-**Score PRP op schaal 1-10**:
-- 8-10: High confidence, one-pass implementation mogelijk
-- 6-7: Medium confidence, mogelijk iteratie nodig
-- <6: Low confidence, meer research of ARG detail nodig
+**Score PRP on scale 1-10**:
+- 8-10: High confidence, one-pass implementation possible
+- 6-7: Medium confidence, possible iteration needed
+- <6: Low confidence, more research or ARG detail needed
 
 ### Step 10: User Guidance
 
-Informeer gebruiker over:
+Inform user about:
 ```
-✅ Initial PRP gegenereerd: _ce/prp/initial/[filename].md
+✅ Initial PRP generated: _ce/prp/initial/[filename].md
 
 🔍 Feature Separation Complete!
 
 Foundation in Initial PRP:
-- Complete implementation blueprint met [X] foundation taken
-- Validation loops voor self-checking
+- Complete implementation blueprint with [X] foundation tasks
+- Validation loops for self-checking
 - [Y] framework documentation references
-- [Z] gotchas en best practices
+- [Z] gotchas and best practices
 
 Separated Features (Feature ARGs created):
 ✅ Generated [N] Feature ARGs:
@@ -379,7 +379,7 @@ Separated Features (Feature ARGs created):
 ... (list all created features)
 
 Confidence Score: [score]/10
-[Uitleg van score]
+[Explanation of score]
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -389,15 +389,15 @@ PHASE 1 - Foundation:
 /execute-initial _ce/prp/initial/[filename].md
 
 This will implement:
-1. Project structure opzetten
-2. Dependencies installeren
-3. Database schema creëren (basic tables only)
-4. Authentication implementeren
-5. Base UI componenten maken
-6. CI/CD pipeline configureren
+1. Set up project structure
+2. Install dependencies
+3. Create database schema (basic tables only)
+4. Implement authentication
+5. Create base UI components
+6. Configure CI/CD pipeline
 7. Docker setup
 8. Documentation
-9. Alles testen en valideren
+9. Test and validate everything
 
 PHASE 2 - Features (implement in numbered order):
 For each feature:
@@ -406,7 +406,7 @@ For each feature:
   3. Test & validate
   4. Move to next feature
 
-Start met:
+Start with:
 /execute-initial _ce/prp/initial/[filename].md
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -417,9 +417,9 @@ Start met:
 ## Research Guidelines
 
 ### DO:
-- ✅ Zoek official documentation voor alle frameworks
-- ✅ Zoek naar production-ready examples
-- ✅ Document version numbers en compatibility
+- ✅ Search official documentation for all frameworks
+- ✅ Search for production-ready examples
+- ✅ Document version numbers and compatibility
 - ✅ Include specific documentation URLs
 - ✅ Note rate limits for external APIs
 - ✅ Find starter templates/boilerplates
@@ -589,17 +589,17 @@ Minor uncertainty:
 
 ## Success Criteria
 
-Het /generate-initial-prp commando is succesvol wanneer:
+The /generate-initial-prp command is successful when:
 
-1. ✅ Compleet PRP document gegenereerd volgens template
-2. ✅ All necessary research completed en gedocumenteerd
-3. ✅ Implementation blueprint met concrete, uitvoerbare tasks
-4. ✅ Validation loops zijn executable en compleet
-5. ✅ Gotchas en best practices gedocumenteerd
-6. ✅ Confidence score is realistisch en explained
-7. ✅ Document opgeslagen op juiste locatie
-8. ✅ Gebruiker begrijpt volgende stappen
+1. ✅ Complete PRP document generated according to template
+2. ✅ All necessary research completed and documented
+3. ✅ Implementation blueprint with concrete, executable tasks
+4. ✅ Validation loops are executable and complete
+5. ✅ Gotchas and best practices documented
+6. ✅ Confidence score is realistic and explained
+7. ✅ Document saved in correct location
+8. ✅ User understands next steps
 
 ---
 
-**Remember**: Een goed PRP is de sleutel tot successful one-pass implementation. Neem de tijd voor thorough research!
+**Remember**: A good PRP is the key to successful one-pass implementation. Take the time for thorough research!
