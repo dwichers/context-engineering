@@ -3,7 +3,7 @@
 ## 📋 Project Overview
 
 ### Project Name
-[Naam van de applicatie/website]
+[Name of the application/website]
 
 ### Project Type
 - [ ] Web Application
@@ -14,133 +14,133 @@
 - [ ] Other: ___________
 
 ### Brief Description
-[Korte beschrijving van het idee in 2-3 zinnen]
+[Short description of the idea in 2-3 sentences]
 
 ---
 
-## 🎯 Hoofddoel & Probleem
+## 🎯 Main Goal & Problem
 
-### Wat is het hoofddoel van deze applicatie?
-[Beschrijf het primaire doel en wat je wilt bereiken]
+### What is the main goal of this application?
+[Describe the primary objective and what you want to achieve]
 
-### Welk probleem lost het op?
-[Beschrijf het probleem dat gebruikers ervaren en hoe dit wordt opgelost]
+### What problem does it solve?
+[Describe the problem users experience and how this solves it]
 
-### Voor wie is deze applicatie bedoeld?
-[Beschrijf de doelgroep(en)]
+### Who is this application for?
+[Describe the target audience(s)]
 
 ---
 
-## 🔧 Technische Stack
+## 🔧 Technical Stack
 
 ### Frontend
-- **Framework/Library**: [bijvoorbeeld: React, Vue, Angular, Svelte, Next.js]
-- **Styling**: [bijvoorbeeld: Tailwind CSS, styled-components, SCSS, CSS Modules]
-- **State Management**: [bijvoorbeeld: Redux, Zustand, Context API, Pinia]
-- **UI Component Library**: [bijvoorbeeld: shadcn/ui, Material-UI, Ant Design, custom]
-- **Build Tool**: [bijvoorbeeld: Vite, Webpack, Turbopack]
+- **Framework/Library**: [e.g., React, Vue, Angular, Svelte, Next.js]
+- **Styling**: [e.g., Tailwind CSS, styled-components, SCSS, CSS Modules]
+- **State Management**: [e.g., Redux, Zustand, Context API, Pinia]
+- **UI Component Library**: [e.g., shadcn/ui, Material-UI, Ant Design, custom]
+- **Build Tool**: [e.g., Vite, Webpack, Turbopack]
 
 ### Backend
-- **Framework**: [bijvoorbeeld: FastAPI, Django, Express.js, NestJS, Flask]
-- **Database**: [bijvoorbeeld: PostgreSQL, MongoDB, MySQL, SQLite, Supabase]
-- **ORM/ODM**: [bijvoorbeeld: Prisma, SQLAlchemy, Mongoose, Drizzle]
-- **Authentication**: [bijvoorbeeld: JWT, OAuth2, Auth0, Supabase Auth, NextAuth]
-- **API Type**: [bijvoorbeeld: REST, GraphQL, tRPC, gRPC]
+- **Framework**: [e.g., FastAPI, Django, Express.js, NestJS, Flask]
+- **Database**: [e.g., PostgreSQL, MongoDB, MySQL, SQLite, Supabase]
+- **ORM/ODM**: [e.g., Prisma, SQLAlchemy, Mongoose, Drizzle]
+- **Authentication**: [e.g., JWT, OAuth2, Auth0, Supabase Auth, NextAuth]
+- **API Type**: [e.g., REST, GraphQL, tRPC, gRPC]
 
 ### Infrastructure & Deployment
-- **Hosting Frontend**: [bijvoorbeeld: Vercel, Netlify, CloudFlare Pages]
-- **Hosting Backend**: [bijvoorbeeld: Railway, Render, AWS, DigitalOcean]
-- **CI/CD**: [bijvoorbeeld: GitHub Actions, GitLab CI, Jenkins]
-- **Containerization**: [bijvoorbeeld: Docker, Docker Compose, Kubernetes]
+- **Hosting Frontend**: [e.g., Vercel, Netlify, CloudFlare Pages]
+- **Hosting Backend**: [e.g., Railway, Render, AWS, DigitalOcean]
+- **CI/CD**: [e.g., GitHub Actions, GitLab CI, Jenkins]
+- **Containerization**: [e.g., Docker, Docker Compose, Kubernetes]
 
 ### Additional Services
-- **File Storage**: [bijvoorbeeld: AWS S3, Cloudinary, Supabase Storage]
-- **Email Service**: [bijvoorbeeld: SendGrid, Mailgun, Resend]
-- **Analytics**: [bijvoorbeeld: Google Analytics, Plausible, Mixpanel]
-- **Monitoring**: [bijvoorbeeld: Sentry, LogRocket, DataDog]
+- **File Storage**: [e.g., AWS S3, Cloudinary, Supabase Storage]
+- **Email Service**: [e.g., SendGrid, Mailgun, Resend]
+- **Analytics**: [e.g., Google Analytics, Plausible, Mixpanel]
+- **Monitoring**: [e.g., Sentry, LogRocket, DataDog]
 
 ---
 
-## 📦 Core Functionaliteiten
+## 📦 Core Functionalities
 
-### Essentiële Features (Must-have)
-1. [Feature 1 - beschrijf wat het doet en waarom het essentieel is]
+### Essential Features (Must-have)
+1. [Feature 1 - describe what it does and why it's essential]
 2. [Feature 2]
 3. [Feature 3]
 ...
 
-### Belangrijke Features (Should-have)
-1. [Feature 1 - beschrijf wat het doet]
+### Important Features (Should-have)
+1. [Feature 1 - describe what it does]
 2. [Feature 2]
 ...
 
-### Optionele Features (Nice-to-have)
-1. [Feature 1 - beschrijf wat het doet]
+### Optional Features (Nice-to-have)
+1. [Feature 1 - describe what it does]
 2. [Feature 2]
 ...
 
 ---
 
-## 👥 Gebruikersrollen & Permissies
+## 👥 User Roles & Permissions
 
-### Rollen
-- **[Rol 1]**: [Beschrijving van deze rol en wat ze kunnen doen]
-- **[Rol 2]**: [Beschrijving van deze rol en wat ze kunnen doen]
+### Roles
+- **[Role 1]**: [Description of this role and what they can do]
+- **[Role 2]**: [Description of this role and what they can do]
 
-### Permissie Matrix
-| Feature/Actie | Rol 1 | Rol 2 | Rol 3 |
-|---------------|-------|-------|-------|
-| [Actie 1]     | ✅    | ✅    | ❌    |
-| [Actie 2]     | ✅    | ❌    | ❌    |
+### Permission Matrix
+| Feature/Action | Role 1 | Role 2 | Role 3 |
+|----------------|--------|--------|--------|
+| [Action 1]     | ✅     | ✅     | ❌     |
+| [Action 2]     | ✅     | ❌     | ❌     |
 
 ---
 
 ## 🎨 UI/UX Design
 
 ### Design System
-- **Color Scheme**: [bijvoorbeeld: Dark mode, Light mode, Custom theme]
-- **Typography**: [bijvoorbeeld: Inter, Roboto, System fonts]
-- **Design Inspiration**: [Links naar voorbeelden, Dribbble, Behance, bestaande apps]
+- **Color Scheme**: [e.g., Dark mode, Light mode, Custom theme]
+- **Typography**: [e.g., Inter, Roboto, System fonts]
+- **Design Inspiration**: [Links to examples, Dribbble, Behance, existing apps]
 
 ### Layout & Navigation
-- **Navigation Type**: [bijvoorbeeld: Sidebar, Top navbar, Bottom tabs, Drawer]
-- **Responsive Design**: [Beschrijf mobile-first approach of desktop-first]
+- **Navigation Type**: [e.g., Sidebar, Top navbar, Bottom tabs, Drawer]
+- **Responsive Design**: [Describe mobile-first approach or desktop-first]
 - **Key Pages/Views**:
-  1. [Pagina 1 - beschrijf layout en componenten]
-  2. [Pagina 2]
+  1. [Page 1 - describe layout and components]
+  2. [Page 2]
   ...
 
-### Referenties & Voorbeelden
-- [Link naar design mockups indien beschikbaar]
-- [Link naar vergelijkbare applicaties]
-- [Screenshots of wireframes indien beschikbaar]
+### References & Examples
+- [Link to design mockups if available]
+- [Link to similar applications]
+- [Screenshots or wireframes if available]
 
 ---
 
-## 🔌 Externe Integraties & APIs
+## 🔌 External Integrations & APIs
 
-### Vereiste Integraties
-1. **[Service Naam]**: [Waarom nodig, wat doet het]
-   - API Documentatie: [Link]
+### Required Integrations
+1. **[Service Name]**: [Why needed, what it does]
+   - API Documentation: [Link]
    - Authentication Method: [API Key, OAuth, etc.]
 
-2. **[Service Naam]**: [Beschrijving]
-   - API Documentatie: [Link]
+2. **[Service Name]**: [Description]
+   - API Documentation: [Link]
    - Authentication Method: [Method]
 
-### Optionele Integraties
-1. [Integration naam en beschrijving]
+### Optional Integrations
+1. [Integration name and description]
 
 ---
 
-## 📊 Data Model & Structuur
+## 📊 Data Model & Structure
 
-### Hoofd Entities
-1. **[Entity 1 - bijvoorbeeld: User]**
+### Main Entities
+1. **[Entity 1 - e.g., User]**
    - Fields: [username, email, password, role, created_at]
    - Relationships: [Has many posts, belongs to organization]
 
-2. **[Entity 2 - bijvoorbeeld: Post]**
+2. **[Entity 2 - e.g., Post]**
    - Fields: [title, content, author_id, status, published_at]
    - Relationships: [Belongs to User, has many Comments]
 
@@ -148,9 +148,9 @@
    - Fields: [...]
    - Relationships: [...]
 
-### Relaties tussen Entities
+### Relationships between Entities
 ```
-[Simpel diagram of beschrijving van relaties]
+[Simple diagram or description of relationships]
 User (1) -> (N) Posts
 Post (1) -> (N) Comments
 User (N) <- (N) Organizations (Many-to-Many)
@@ -181,14 +181,14 @@ User (N) <- (N) Organizations (Many-to-Many)
 ## 📈 Performance & Scalability
 
 ### Performance Targets
-- **Page Load Time**: [bijvoorbeeld: < 2 seconden]
-- **API Response Time**: [bijvoorbeeld: < 200ms voor 95th percentile]
-- **Concurrent Users**: [bijvoorbeeld: 1000 simultane gebruikers]
+- **Page Load Time**: [e.g., < 2 seconds]
+- **API Response Time**: [e.g., < 200ms for 95th percentile]
+- **Concurrent Users**: [e.g., 1000 simultaneous users]
 
 ### Scalability Considerations
-- [Hoe moet de app kunnen schalen? Horizontal/Vertical]
-- [Database sharding nodig?]
-- [CDN gebruik?]
+- [How should the app scale? Horizontal/Vertical]
+- [Database sharding needed?]
+- [CDN usage?]
 - [Caching strategy?]
 
 ---
@@ -233,40 +233,40 @@ User (N) <- (N) Organizations (Many-to-Many)
 - [Authentication & Authorization]
 - [Database schema & migrations]
 - [Basic UI components]
-- **Estimated Duration**: [bijvoorbeeld: 2 weken]
+- **Estimated Duration**: [e.g., 2 weeks]
 
 ### Phase 2: Core Features
 - [Feature 1]
 - [Feature 2]
 - [Feature 3]
-- **Estimated Duration**: [bijvoorbeeld: 4 weken]
+- **Estimated Duration**: [e.g., 4 weeks]
 
 ### Phase 3: Advanced Features
 - [Feature 4]
 - [Feature 5]
-- **Estimated Duration**: [bijvoorbeeld: 3 weken]
+- **Estimated Duration**: [e.g., 3 weeks]
 
 ### Phase 4: Polish & Launch
 - [Testing & bug fixes]
 - [Performance optimization]
 - [Documentation]
 - [Deployment]
-- **Estimated Duration**: [bijvoorbeeld: 1 week]
+- **Estimated Duration**: [e.g., 1 week]
 
 ---
 
 ## 🚀 Deployment & Operations
 
 ### Deployment Strategy
-- **Deployment Type**: [bijvoorbeeld: Continuous Deployment, Manual deploys]
+- **Deployment Type**: [e.g., Continuous Deployment, Manual deploys]
 - **Environments**: [Development, Staging, Production]
-- **Rollback Strategy**: [Hoe ga je om met failed deploys?]
+- **Rollback Strategy**: [How to handle failed deploys?]
 
 ### Monitoring & Maintenance
 - **Uptime Monitoring**: [Tool/Service]
 - **Error Tracking**: [Tool/Service]
 - **Logging**: [Tool/Service]
-- **Backup Strategy**: [Hoe vaak, waar opgeslagen]
+- **Backup Strategy**: [How often, where stored]
 
 ---
 
@@ -290,48 +290,48 @@ User (N) <- (N) Organizations (Many-to-Many)
 ## 🤔 Open Questions & Considerations
 
 ### Technical Uncertainties
-1. [Vraag over technische keuze die nog onduidelijk is]
-2. [Vraag over implementatie detail]
+1. [Question about technical choice that is still unclear]
+2. [Question about implementation detail]
 
 ### Design Uncertainties
-1. [Vraag over UI/UX beslissing]
-2. [Vraag over user flow]
+1. [Question about UI/UX decision]
+2. [Question about user flow]
 
 ### Business Uncertainties
-1. [Vraag over feature prioriteit]
-2. [Vraag over budget/timeline]
+1. [Question about feature priority]
+2. [Question about budget/timeline]
 
 ---
 
-## 🔗 References & Inspiratie
+## 🔗 References & Inspiration
 
-### Vergelijkbare Projecten
-- [Link naar vergelijkbaar project 1 - wat kunnen we hiervan leren?]
-- [Link naar vergelijkbaar project 2]
+### Similar Projects
+- [Link to similar project 1 - what can we learn from this?]
+- [Link to similar project 2]
 
 ### Templates & Starters
-- [Link naar template/boilerplate die gebruikt kan worden]
-- [Link naar UI kit]
+- [Link to template/boilerplate that can be used]
+- [Link to UI kit]
 
-### Repository Voorbeelden
-- [Link naar GitHub repo die goede patterns laat zien]
-- [Link naar code voorbeelden]
+### Repository Examples
+- [Link to GitHub repo showing good patterns]
+- [Link to code examples]
 
 ---
 
 ## 💡 Additional Notes
 
-[Ruimte voor extra opmerkingen, constraints, of belangrijke context die niet in bovenstaande secties past]
+[Space for extra comments, constraints, or important context that doesn't fit in the above sections]
 
 ---
 
 ## ✅ Completion Checklist
 
-- [ ] Alle secties zijn ingevuld
-- [ ] Technische stack is duidelijk gedefinieerd
-- [ ] Core features zijn geïdentificeerd en geprioriteerd
-- [ ] Data model is beschreven
-- [ ] Security requirements zijn gespecificeerd
-- [ ] Open vragen zijn gedocumenteerd
-- [ ] Referenties en voorbeelden zijn toegevoegd
-- [ ] Document is gereviewed en compleet
+- [ ] All sections are filled in
+- [ ] Technical stack is clearly defined
+- [ ] Core features are identified and prioritized
+- [ ] Data model is described
+- [ ] Security requirements are specified
+- [ ] Open questions are documented
+- [ ] References and examples are added
+- [ ] Document is reviewed and complete
