@@ -1206,6 +1206,44 @@ docker-compose up -d
 
 ---
 
+## ❌ Anti-Patterns to Avoid
+
+**CRITICAL**: These are common mistakes that will break the implementation or violate codebase standards.
+
+### Code Patterns
+- ❌ **Don't create new patterns** when existing ones work - Always check codebase for established patterns first
+- ❌ **Don't use sync functions in async context** - Causes blocking and performance issues
+- ❌ **Don't hardcode values** that should be config - Use environment variables or configuration files
+- ❌ **Don't catch all exceptions** - Be specific about error types for better debugging
+- ❌ **Don't skip type hints** - TypeScript/Python type safety is mandatory
+- ❌ **Don't ignore linting errors** - Fix them, don't suppress them
+
+### Testing & Validation
+- ❌ **Don't skip validation** because "it should work" - Always run validation loops
+- ❌ **Don't ignore failing tests** - Fix the root cause, don't change tests to pass
+- ❌ **Don't mock everything** - Test real behavior, mock only external dependencies
+- ❌ **Don't skip edge case testing** - Test error scenarios and boundary conditions
+
+### Database & State
+- ❌ **Don't skip migrations** - Always create proper migration scripts
+- ❌ **Don't use raw SQL** when ORM methods exist - Use the ORM layer consistently
+- ❌ **Don't forget indexes** on frequently queried columns
+- ❌ **Don't create N+1 queries** - Use proper joins or eager loading
+
+### Security & Performance
+- ❌ **Don't trust user input** - Always validate and sanitize
+- ❌ **Don't log sensitive data** - Passwords, tokens, PII should never be logged
+- ❌ **Don't block the event loop** - Use async/await properly in async frameworks
+- ❌ **Don't ignore rate limits** - Respect external API rate limits
+
+### Integration
+- ❌ **Don't break existing features** - Preserve backward compatibility
+- ❌ **Don't create breaking API changes** without migration path
+- ❌ **Don't skip dependency checks** - Verify dependent features are implemented
+- ❌ **Don't ignore UI/UX consistency** - Follow the design system
+
+---
+
 ## 📝 Notes for AI Implementation
 
 ### Critical Reminders
