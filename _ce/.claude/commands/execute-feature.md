@@ -1,10 +1,10 @@
 # Execute Feature PRP
 
-Implementeer een feature volgens het Feature PRP document.
+Implement a feature according to the Feature PRP document.
 
 ## PRP File: $ARGUMENTS
 
-Dit moet het pad zijn naar het feature PRP document: `_ce/prp/feature/[filename].md`
+This must be the path to the feature PRP document: `_ce/prp/feature/[filename].md`
 
 ---
 
@@ -575,9 +575,9 @@ Feature: [Name] (Feature #[Number])
 
 🎯 Next Steps:
 
-Feature klaar! Je kunt nu:
-1. Volgende feature implementeren (als beschikbaar)
-2. Nieuwe feature toevoegen: /generate-feature-arg "[description]"
+Feature ready! You can now:
+1. Implement next feature (if available)
+2. Add new feature: /generate-feature-arg "[description]"
 3. Commit changes: git add . && git commit -m "feat: implement [feature]"
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -622,7 +622,7 @@ Feature klaar! Je kunt nu:
 
 ## Success Criteria
 
-Het /execute-feature commando is succesvol wanneer:
+The /execute-feature command is successful when:
 
 1. ✅ ALL tasks from PRP completed
 2. ✅ ALL acceptance criteria from ARG met
