@@ -1116,13 +1116,69 @@ npm run preview
 
 ---
 
+## ❌ Anti-Patterns to Avoid
+
+**CRITICAL**: These are common mistakes that will break the implementation or violate best practices.
+
+### Code Patterns
+- ❌ **Don't create new patterns** when established ones exist - Follow framework conventions
+- ❌ **Don't use sync functions in async context** - Causes blocking in async frameworks (FastAPI, etc.)
+- ❌ **Don't hardcode values** that should be in .env - Use configuration management
+- ❌ **Don't catch all exceptions** blindly - Be specific for better error handling
+- ❌ **Don't skip type hints** - Python type hints and TypeScript types are mandatory
+- ❌ **Don't ignore linting/type errors** - Fix them immediately, don't accumulate tech debt
+
+### Testing & Validation
+- ❌ **Don't skip validation loops** - Run all levels after each task
+- ❌ **Don't ignore failing tests** - Fix root cause, never comment out tests
+- ❌ **Don't write tests after implementation** - Write tests alongside code
+- ❌ **Don't skip edge case testing** - Test error scenarios, not just happy paths
+- ❌ **Don't mock away real testing** - Only mock external dependencies
+
+### Database & Migrations
+- ❌ **Don't skip migrations** - Always create migration scripts for schema changes
+- ❌ **Don't use raw SQL** when ORM supports the operation
+- ❌ **Don't forget indexes** on foreign keys and frequently queried columns
+- ❌ **Don't create circular dependencies** in models
+- ❌ **Don't skip migration testing** - Test both upgrade and downgrade
+
+### Security
+- ❌ **Don't store secrets in code** - Use environment variables
+- ❌ **Don't skip input validation** - Always validate user input
+- ❌ **Don't log sensitive data** - Never log passwords, tokens, API keys
+- ❌ **Don't use weak password hashing** - Use bcrypt or argon2, not MD5/SHA1
+- ❌ **Don't skip CORS configuration** - Configure properly from day one
+- ❌ **Don't expose internal errors to users** - Return generic error messages
+
+### Architecture & Structure
+- ❌ **Don't mix concerns** - Separate routes, services, and data access
+- ❌ **Don't create god classes** - Keep classes focused and single-purpose
+- ❌ **Don't skip dependency injection** - Use proper DI patterns (FastAPI Depends, etc.)
+- ❌ **Don't tight-couple components** - Design for modularity and testing
+- ❌ **Don't create circular imports** - Plan your module structure carefully
+
+### Performance
+- ❌ **Don't create N+1 queries** - Use joins or eager loading
+- ❌ **Don't block the event loop** in async code
+- ❌ **Don't skip connection pooling** for databases
+- ❌ **Don't load entire tables** into memory - Use pagination
+- ❌ **Don't skip caching** for expensive operations
+
+### Documentation & Git
+- ❌ **Don't skip README updates** - Document as you build
+- ❌ **Don't commit .env files** - Only commit .env.example
+- ❌ **Don't create huge commits** - Commit logical units of work
+- ❌ **Don't skip commit messages** - Write meaningful commit descriptions
+
+---
+
 ## 📝 Notes for AI Implementation
 
 ### Critical Reminders
 - Follow CLAUDE.md guidelines strictly
 - Use existing patterns from _ce/examples/
 - Validate after each major step
-- Don't skip error handling
+- Don't skip error handling (see Anti-Patterns above!)
 - Write tests as you implement features
 - Document complex logic with comments
 - Use type hints/annotations throughout
