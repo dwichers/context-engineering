@@ -19,20 +19,34 @@
 
 **Initial Project Setup**:
 1. `/initial "[project description]"` - Generate Initial ARG document
-2. `/generate-initial-prp [initial-arg-path]` - Generate Initial PRP
-3. `/execute-initial [initial-prp-path]` - Implement initial setup
+2. `/generate-initial-prp [initial-arg-path]` - Generate Initial PRP + Separate Business Features into Feature ARGs
+3. `/execute-initial [initial-prp-path]` - Implement foundation only (NOT business features)
 
 **Feature Development**:
-1. `/generate-feature-arg "[feature description]"` - Generate Feature ARG
-2. `/generate-feature-prp [feature-arg-path]` - Generate Feature PRP
+1. Feature ARGs are AUTO-GENERATED during `/generate-initial-prp` (step 2.2!)
+2. `/generate-feature-prp [feature-arg-path]` - Generate Feature PRP for a separated feature
 3. `/execute-feature [feature-prp-path]` - Implement feature
+4. (Optional) `/generate-feature-arg "[description]"` - Add NEW features later
 
 ### When to Use This Workflow
 
 - **Starting a new project**: Use `/initial` to structure your idea
-- **Adding features**: Use `/generate-feature-arg` for each new feature
-- **Need implementation guidance**: Generate PRPs before coding
+- **Generate Initial PRP**: `/generate-initial-prp` will AUTOMATICALLY separate business features
+- **Execute Foundation**: `/execute-initial` implements ONLY the foundation (auth, DB, core API)
+- **Implement Features**: Use auto-generated Feature ARGs from step 2 for business logic
+- **Adding NEW features later**: Use `/generate-feature-arg` for additional features
 - **Want structured, validated implementation**: Execute PRPs with built-in validation
+
+### Critical: Feature Separation
+
+**IMPORTANT**: When running `/generate-initial-prp`, the system will:
+1. Analyze ALL features from Initial ARG
+2. Separate **Foundation** (auth, DB, core) from **Business Features**
+3. Keep Foundation in Initial PRP
+4. Create separate Feature ARG documents for each business feature
+5. Number features in logical dependency order
+
+This prevents the Initial PRP from becoming too large and ensures manageable, testable implementation phases.
 
 ---
 

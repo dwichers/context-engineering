@@ -135,25 +135,40 @@ Claude implementeert:
    └─ /initial "[beschrijving]"
       └─> _ce/arg/initial/[project]-initial-arg.md
 
-2️⃣ INITIAL SETUP PLANNING
+2️⃣ INITIAL SETUP PLANNING + FEATURE SEPARATION
    ├─ /generate-initial-prp [initial-arg-path]
-   ├─ Research frameworks, best practices
-   ├─ Design database schema
-   └─> _ce/prp/initial/[project]-initial-prp.md
+   │
+   ├─ STAP 2.1: Research
+   │    ├─ Research frameworks, best practices
+   │    └─ Design database schema
+   │
+   ├─ STAP 2.2: FEATURE SEPARATION (KRITIEK!)
+   │    ├─ Analyseer ALLE features uit Initial ARG
+   │    ├─ Foundation features → blijven in Initial PRP
+   │    ├─ Business features → separate Feature ARGs
+   │    └─> CREATE: _ce/arg/feature/001-[name]-feature-arg.md
+   │         CREATE: _ce/arg/feature/002-[name]-feature-arg.md
+   │         CREATE: _ce/arg/feature/003-[name]-feature-arg.md
+   │         ... (all business features)
+   │
+   └─ STAP 2.3: Initial PRP (foundation only!)
+      └─> _ce/prp/initial/[project]-initial-prp.md
 
-3️⃣ INITIAL SETUP EXECUTION
+3️⃣ INITIAL SETUP EXECUTION (Foundation Only!)
    ├─ /execute-initial [initial-prp-path]
-   ├─ Implement: DB, Auth, APIs, UI, CI/CD
+   ├─ Implement: DB (basic), Auth, Core APIs, Base UI, CI/CD
    ├─ Run validations (linting, tests, E2E)
-   └─> ✅ Production-ready foundation
+   └─> ✅ Production-ready foundation (NO business features yet!)
 
-4️⃣ FEATURE DISCOVERY
-   ├─ Identify features from initial setup
-   └─> _ce/arg/feature/[number]-[name]-feature-arg.md (auto-generated)
+4️⃣ FEATURE DEVELOPMENT
+   Voor elk Feature ARG (auto-generated in stap 2.2):
 
-5️⃣ FEATURE DEVELOPMENT (per feature)
-   ├─ A: /generate-feature-arg "[feature description]"
+   ├─ A: Feature ARG already exists from step 2.2!
    │    └─> _ce/arg/feature/[number]-[name]-feature-arg.md
+   │
+   │    OR manually add new feature:
+   │    /generate-feature-arg "[feature description]"
+   │    └─> _ce/arg/feature/[next-number]-[name]-feature-arg.md
    │
    ├─ B: /generate-feature-prp [feature-arg-path]
    │    ├─ Research specific implementation
@@ -165,8 +180,8 @@ Claude implementeert:
         ├─ Write & run tests
         └─> ✅ Feature complete & validated
 
-6️⃣ ITERATIE
-   └─ Herhaal stap 5 voor volgende feature
+5️⃣ ITERATIE
+   └─ Herhaal stap 4 voor elk volgend feature (in numbered order!)
 
 ┌─────────────────────────────────────────────────────────────────┐
 │                      RESULTAAT: VOLLEDIGE APP                    │
@@ -258,11 +273,14 @@ context-engineering-claude/
 
 ---
 
-### Fase 2: Initial PRP Generatie
+### Fase 2: Initial PRP Generatie + Feature Separation
 
 **Commando**: `/generate-initial-prp _ce/arg/initial/[file].md`
 
 **Wat gebeurt er:**
+
+#### Stap 2.1: Research & Planning
+
 1. **Research Phase**:
    - Zoekt framework documentation
    - Vindt best practices voor de tech stack
@@ -270,9 +288,41 @@ context-engineering-claude/
    - Identificeert common gotchas
    - Zoekt deployment guides
 
-2. **Blueprint Creation**:
+#### Stap 2.2: Feature Separation (**KRITIEK!**)
+
+**Dit is de belangrijkste stap om te voorkomen dat het Initial PRP te groot wordt!**
+
+2. **Feature Separation**:
+   - Analyseert ALLE features uit het Initial ARG
+   - Categoriseert in **Foundation** vs **Business Features**
+
+   **Foundation** (blijft in Initial PRP):
+   - ✅ Project structure
+   - ✅ Database setup (basic schema)
+   - ✅ Authentication & user management
+   - ✅ Core API structure
+   - ✅ Frontend foundation
+   - ✅ CI/CD & Docker
+
+   **Business Features** (worden Feature ARGs):
+   - ❌ All business logic
+   - ❌ External integrations
+   - ❌ Advanced UI features
+   - ❌ Reporting/analytics
+   - ❌ Notifications
+   - ❌ etc.
+
+3. **Generate Feature ARG Documents**:
+   - Voor ELKE business feature wordt een Feature ARG aangemaakt
+   - Numbered sequentially (001, 002, 003, etc.)
+   - Ordered by logical dependencies
+   - Saved in `_ce/arg/feature/[number]-[name]-feature-arg.md`
+
+#### Stap 2.3: Blueprint Creation (Foundation Only!)
+
+4. **Initial PRP Blueprint** (ONLY foundation):
    - Task 1: Project initialization
-   - Task 2: Database setup
+   - Task 2: Database setup (basic schema)
    - Task 3: Authentication implementation
    - Task 4: Backend core structure
    - Task 5: Frontend setup
@@ -281,13 +331,17 @@ context-engineering-claude/
    - Task 8: Docker configuration
    - Task 9: Documentation
 
-3. **Validation Strategy**:
+5. **Validation Strategy**:
    - Level 1: Linting & type checking commands
    - Level 2: Unit tests
    - Level 3: Integration tests
    - Level 4: E2E manual tests
 
-**Output**: `_ce/prp/initial/YYYY-MM-DD-[project-name]-initial-prp.md`
+**Outputs**:
+- `_ce/prp/initial/YYYY-MM-DD-[project-name]-initial-prp.md` (foundation only!)
+- `_ce/arg/feature/001-[feature]-feature-arg.md` (business feature 1)
+- `_ce/arg/feature/002-[feature]-feature-arg.md` (business feature 2)
+- ... (alle business features gescheiden)
 
 **Confidence Score**: 8-10/10 voor production-ready implementation
 

@@ -99,7 +99,106 @@ Check `_ce/examples/` voor:
 - API patterns
 - Testing patterns
 
-### Step 3: Generate PRP Structure
+### Step 3: Feature Separation (CRITICAL!)
+
+**BELANGRIJKSTE STAP**: Identificeer en scheid features die NIET tot de foundation behoren.
+
+#### 3.1 Analyseer Features uit ARG
+
+Uit de Initial ARG, categoriseer ALLE features in:
+
+**A. FOUNDATION (blijft in Initial PRP)**:
+- ✅ Project structure & configuration
+- ✅ Database setup & basic schema
+- ✅ Authentication & Authorization (user management)
+- ✅ Core API structure
+- ✅ Frontend routing & layout
+- ✅ Basic UI components (buttons, forms, layouts)
+- ✅ CI/CD pipeline
+- ✅ Docker setup
+- ✅ Documentation structure
+
+**B. FEATURES (worden Feature ARGs)**:
+- ❌ Business logic features (alles wat niet tot auth/basis hoort)
+- ❌ Advanced UI features
+- ❌ External integrations (email, payment, etc.)
+- ❌ Reporting/analytics features
+- ❌ Admin panels (beyond basic CRUD)
+- ❌ Notifications systemen
+- ❌ File uploads/storage
+- ❌ Search functionality
+- ❌ Real-time features (WebSockets, etc.)
+- ❌ Export/import features
+
+#### 3.2 Create Feature ARG Documents
+
+Voor ELKE feature in categorie B:
+
+1. **Determine feature number**:
+   - Check `_ce/arg/feature/` voor existing features
+   - Assign next sequential number
+   - Order by logical dependency (001, 002, 003, etc.)
+
+2. **Generate Feature ARG** using template:
+   ```bash
+   Read _ce/arg/feature/template/feature-arg-template.md
+   ```
+
+3. **Fill Feature ARG** met informatie uit Initial ARG:
+   - Feature name & description
+   - Priority (from Initial ARG priorities)
+   - Dependencies (bepaal welke features eerst moeten)
+   - Technical specs (extracted from Initial ARG)
+   - Acceptance criteria
+   - Data model wijzigingen
+   - API endpoints
+   - UI components
+
+4. **Save Feature ARG**:
+   ```
+   Location: _ce/arg/feature/[number]-[feature-name]-feature-arg.md
+   Format: 001-user-profile-management-feature-arg.md
+   ```
+
+5. **Repeat voor ALLE features** in categorie B
+
+#### 3.3 Inform User
+
+Na het scheiden van features, informeer de gebruiker:
+
+```
+🔍 Feature Separation Complete!
+
+Foundation Features (in Initial PRP):
+- Project initialization
+- Database setup
+- Authentication & user management
+- Core API structure
+- Frontend foundation
+- CI/CD & Docker
+
+Separated Features (Feature ARGs created):
+[List all created feature ARGs with numbers]
+
+✅ Generated Feature ARGs:
+1. _ce/arg/feature/001-[name]-feature-arg.md - [Priority: High]
+2. _ce/arg/feature/002-[name]-feature-arg.md - [Priority: High]
+3. _ce/arg/feature/003-[name]-feature-arg.md - [Priority: Medium]
+...
+
+Recommended Implementation Order:
+1. Execute Initial PRP first (/execute-initial)
+2. Then implement features in numbered order:
+   - /generate-feature-prp _ce/arg/feature/001-...
+   - /execute-feature _ce/prp/feature/001-...
+   - (repeat for each feature)
+```
+
+**CRITICAL**: Het Initial PRP mag ALLEEN de foundation bevatten. Alle business features MOETEN gescheiden worden!
+
+---
+
+### Step 4: Generate Initial PRP Structure
 
 1. **Read the PRP template**:
    ```bash
@@ -107,12 +206,16 @@ Check `_ce/examples/` voor:
    ```
 
 2. **Fill all sections** met informatie uit:
-   - ARG document
+   - ARG document (ONLY foundation parts)
    - Research findings
    - Framework documentation
    - Best practices
 
-### Step 4: Create Implementation Blueprint
+**IMPORTANT**: Het Initial PRP bevat ALLEEN de foundation - NIET de separated features!
+
+---
+
+### Step 5: Create Implementation Blueprint
 
 Dit is het belangrijkste deel - gedetailleerde tasks met:
 
@@ -182,7 +285,11 @@ Dit is het belangrijkste deel - gedetailleerde tasks met:
 - Geef PSEUDOCODE voor critical parts
 - Specificeer VALIDATION steps
 
-### Step 5: Create Validation Loops
+**REMINDER**: Alleen foundation tasks! Business features zijn al gescheiden in Step 3.
+
+---
+
+### Step 6: Create Validation Loops
 
 Define executable validation commands:
 
@@ -211,7 +318,7 @@ docker-compose up -d
 curl http://localhost:8000/health
 ```
 
-### Step 6: Add Gotchas & Anti-patterns
+### Step 7: Add Gotchas & Anti-patterns
 
 Document CRITICAL information:
 ```python
@@ -221,7 +328,7 @@ Document CRITICAL information:
 # ANTI-PATTERN: ❌ Don't [bad practice]
 ```
 
-### Step 7: Generate Filename & Save
+### Step 8: Generate Filename & Save
 
 1. **Generate filename**:
    ```
@@ -234,7 +341,7 @@ Document CRITICAL information:
    Location: _ce/prp/initial/[filename].md
    ```
 
-### Step 8: Quality Check & Confidence Score
+### Step 9: Quality Check & Confidence Score
 
 Beoordeel het PRP op:
 - [ ] Alle context included (docs, examples, gotchas)
@@ -250,32 +357,59 @@ Beoordeel het PRP op:
 - 6-7: Medium confidence, mogelijk iteratie nodig
 - <6: Low confidence, meer research of ARG detail nodig
 
-### Step 9: User Guidance
+### Step 10: User Guidance
 
 Informeer gebruiker over:
 ```
 ✅ Initial PRP gegenereerd: _ce/prp/initial/[filename].md
 
-Het PRP bevat:
-- Complete implementation blueprint met [X] taken
+🔍 Feature Separation Complete!
+
+Foundation in Initial PRP:
+- Complete implementation blueprint met [X] foundation taken
 - Validation loops voor self-checking
 - [Y] framework documentation references
 - [Z] gotchas en best practices
 
+Separated Features (Feature ARGs created):
+✅ Generated [N] Feature ARGs:
+1. _ce/arg/feature/001-[name]-feature-arg.md - [Priority]
+2. _ce/arg/feature/002-[name]-feature-arg.md - [Priority]
+3. _ce/arg/feature/003-[name]-feature-arg.md - [Priority]
+... (list all created features)
+
 Confidence Score: [score]/10
 [Uitleg van score]
 
-Volgende stap:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 Recommended Implementation Order:
+
+PHASE 1 - Foundation:
 /execute-initial _ce/prp/initial/[filename].md
 
-Dit zal:
+This will implement:
 1. Project structure opzetten
 2. Dependencies installeren
-3. Database schema creëren
+3. Database schema creëren (basic tables only)
 4. Authentication implementeren
 5. Base UI componenten maken
 6. CI/CD pipeline configureren
-7. Alles testen en valideren
+7. Docker setup
+8. Documentation
+9. Alles testen en valideren
+
+PHASE 2 - Features (implement in numbered order):
+For each feature:
+  1. /generate-feature-prp _ce/arg/feature/[number]-[name]-feature-arg.md
+  2. /execute-feature _ce/prp/feature/[number]-[name]-feature-prp.md
+  3. Test & validate
+  4. Move to next feature
+
+Start met:
+/execute-initial _ce/prp/initial/[filename].md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
 ---
@@ -309,6 +443,14 @@ Dit zal:
 ## PRP Quality Checklist
 
 Before saving the PRP, ensure:
+
+### Feature Separation (CRITICAL!)
+- [ ] ALL business features extracted from Initial ARG
+- [ ] Feature ARG documents created for each separated feature
+- [ ] Features numbered in logical dependency order
+- [ ] Each Feature ARG has clear dependencies noted
+- [ ] Initial PRP contains ONLY foundation tasks
+- [ ] User informed about separated features
 
 ### Context Completeness
 - [ ] All framework documentation URLs included

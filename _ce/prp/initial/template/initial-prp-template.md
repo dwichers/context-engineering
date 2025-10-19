@@ -8,14 +8,30 @@
 
 ## 🎯 Purpose
 
-Dit PRP document beschrijft de complete setup van het project foundation inclusief:
-- Project structuur en configuratie
-- Development environment setup
-- Database schema en migraties
-- Authentication & Authorization basis
-- Core UI componenten en layout
-- CI/CD pipeline
-- Deployment configuratie
+Dit PRP document beschrijft **ALLEEN** de project foundation setup. Business features zijn gescheiden in aparte Feature ARG documenten.
+
+**Foundation Scope** (ONLY these in this PRP):
+- ✅ Project structuur en configuratie
+- ✅ Development environment setup
+- ✅ Database setup met BASIC schema (users, auth tables only)
+- ✅ Authentication & Authorization (user registration, login, roles)
+- ✅ Core API structure (routing, middleware, error handling)
+- ✅ Frontend foundation (routing, layout, basic UI components)
+- ✅ CI/CD pipeline
+- ✅ Docker configuratie
+- ✅ Documentation structure
+
+**NOT in Foundation** (These are separate features):
+- ❌ Business logic features
+- ❌ Advanced UI features
+- ❌ External integrations (email, payment, notifications)
+- ❌ Reporting/analytics
+- ❌ Admin panels beyond basic user management
+- ❌ File upload/storage
+- ❌ Search functionality
+- ❌ Real-time features
+
+**Separated Features**: [List will be added during generation]
 
 ## Core Principles
 
