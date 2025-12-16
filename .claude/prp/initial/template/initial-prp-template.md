@@ -177,7 +177,6 @@ project-root/
 │   ├── requirements.txt             # Python dependencies
 │   └── pyproject.toml               # Project configuration
 ├── .claude/                             # Context Engineering directory
-│   ├── .claude/
 │   ├── arg/
 │   ├── prp/
 │   └── examples/

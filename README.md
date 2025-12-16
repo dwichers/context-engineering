@@ -21,7 +21,6 @@ The workflow separates foundation (project setup, auth, database) from business 
 ```
 context-engineering-claude/
 ├── .claude/                           # Context Engineering directory
-│   ├── .claude/
 │   │   └── commands/              # Slash commands for Claude Code
 │   │       ├── initial.md         # Generate initial ARG
 │   │       ├── generate-initial-prp.md
