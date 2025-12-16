@@ -1,11 +1,11 @@
 # Examples Directory
 
-Deze directory is bedoeld voor **code voorbeelden, UI componenten, frameworks, templates en repository's** die je wilt gebruiken als referentie of inspiratie voor je project.
+This directory is intended for **code examples, UI components, frameworks, templates and repositories** that you want to use as references or inspiration for your project.
 
-## 📁 Wat kun je hier plaatsen?
+## 📁 What can you place here?
 
-### 1. Code Voorbeelden
-- Code snippets die je hebt gevonden
+### 1. Code Examples
+- Code snippets you have found
 - Implementation patterns die je wilt volgen
 - Best practice voorbeelden
 
@@ -15,13 +15,13 @@ Deze directory is bedoeld voor **code voorbeelden, UI componenten, frameworks, t
 - Component code van andere projecten
 
 ### 3. Framework Templates
-- Starter templates voor je tech stack
+- Starter templates for your tech stack
 - Boilerplate code
 - Project structure examples
 
 ### 4. Repository Clones
-- Kloon complete repositories met goede patterns
-- Example projecten met vergelijkbare features
+- Clone complete repositories with good patterns
+- Example projects with similar features
 - Reference implementations
 
 ### 5. Design Assets
@@ -30,10 +30,10 @@ Deze directory is bedoeld voor **code voorbeelden, UI componenten, frameworks, t
 - Design system documentation
 - UI/UX patterns
 
-## 🎯 Hoe te gebruiken?
+## 🎯 How to use?
 
-### Bij het maken van Initial ARG
-In je Initial ARG document, refereer naar voorbeelden hier:
+### When making Initial ARG
+In your Initial ARG document, refer to examples here:
 ```markdown
 ## References & Inspiratie
 
@@ -44,24 +44,24 @@ In je Initial ARG document, refereer naar voorbeelden hier:
 - _ce/examples/ui-components/ - Component library patterns
 ```
 
-### Bij het genereren van PRPs
-De AI zal automatisch deze directory scannen voor relevante patterns en voorbeelden die passen bij je tech stack.
+### When generating PRPs
+The AI will automatically scan this directory for relevant patterns and examples that match your tech stack.
 
-### Bij het implementeren
-Refereer naar specifieke files:
+### When implementing
+Refer to specific files:
 ```python
 # PATTERN: Follow _ce/examples/auth-example/auth.py
 ```
 
-## 📝 Structuur Suggesties
+## 📝 Structure Suggestions
 
 ```
 _ce/examples/
-├── ui-components/           # UI component voorbeelden
+├── ui-components/           # UI component examples
 │   ├── buttons/
 │   ├── forms/
 │   └── layouts/
-├── auth-patterns/          # Authentication voorbeelden
+├── auth-patterns/          # Authentication examples
 │   ├── jwt-example/
 │   └── oauth-example/
 ├── api-patterns/           # API design patterns
@@ -70,7 +70,7 @@ _ce/examples/
 ├── database-patterns/      # Database schemas
 │   ├── migrations/
 │   └── models/
-├── testing-patterns/       # Test voorbeelden
+├── testing-patterns/       # Test examples
 │   ├── unit-tests/
 │   └── integration-tests/
 └── frameworks/             # Framework-specific examples
@@ -79,27 +79,27 @@ _ce/examples/
     └── nextjs-boilerplate/
 ```
 
-## ⚠️ Belangrijk
+## ⚠️ Important
 
-- **Licenties**: Let op licenties bij het kopiëren van code
-- **Attributie**: Documenteer waar code vandaan komt
-- **Updates**: Houd voorbeelden up-to-date met je project requirements
-- **Cleanup**: Verwijder voorbeelden die niet meer relevant zijn
+- **Licenses**: Be aware of licenses when copying code
+- **Attribution**: Document where code comes from
+- **Updates**: Keep examples up-to-date with your project requirements
+- **Cleanup**: Remove examples that are no longer relevant
 
 ## 💡 Tips
 
-1. **Organiseer per category**: Maak subdirectories per type voorbeeld
-2. **Voeg README's toe**: Leg uit waarom elk voorbeeld nuttig is
-3. **Highlight key patterns**: Markeer de belangrijkste parts om te kopiëren
-4. **Version awareness**: Noteer versie nummers van frameworks/libraries
+1. **Organiseer per category**: Make subdirectories per type example
+2. **Add README's**: Explain why each example is useful
+3. **Highlight key patterns**: Mark the most important parts to copy
+4. **Version awareness**: Note version numbers of frameworks/libraries
 
-## 🔗 Externe Resources
+## 🔗 External Resources
 
-Als je niet de hele repository wilt clonen, kun je ook links toevoegen aan:
+If you don't want to clone the entire repository, you can also add links to:
 - GitHub repositories
 - Documentation sites
-- Blog posts met voorbeelden
+- Blog posts with examples
 - Video tutorials
 - Design inspiration (Dribbble, Behance)
 
-Voeg deze links toe in je ARG documenten onder de "References" sectie.
+Add these links to your ARG documents under the "References" section.
