@@ -5,14 +5,14 @@
 This repository uses a structured Context Engineering workflow for building applications through comprehensive context documents.
 
 ### Workflow Structure
-- **`arg/`** - Application Requirements Generator documents (WHAT to build)
-  - `arg/initial/` - Initial project requirements
-  - `arg/feature/` - Individual feature requirements
-- **`prp/`** - Product Requirements Prompts (HOW to build)
-  - `prp/initial/` - Foundation implementation blueprints
-  - `prp/feature/` - Feature implementation blueprints
-- **`examples/`** - Code examples, UI components, reference patterns
-- **`.claude/commands/`** - Workflow slash commands
+- **`_ce/arg/`** - Application Requirements Generator documents (WHAT to build)
+  - `_ce/arg/initial/` - Initial project requirements
+  - `_ce/arg/feature/` - Individual feature requirements
+- **`_ce/prp/`** - Product Requirements Prompts (HOW to build)
+  - `_ce/prp/initial/` - Foundation implementation blueprints
+  - `_ce/prp/feature/` - Feature implementation blueprints
+- **`_ce/examples/`** - Code examples, UI components, reference patterns
+- **`_ce/.claude/commands/`** - Workflow slash commands
 
 ### Workflow Commands
 
@@ -103,7 +103,7 @@ PRPs specify 4 validation levels - run all before marking complete:
 When modifying existing files:
 - **PRESERVE existing functionality** unless explicitly changing it
 - **Follow existing code style** and patterns
-- **Check `examples/`** for reference implementations
+- **Check `_ce/examples/`** for reference implementations
 - **Maintain backward compatibility** when possible
 - **Update related tests** when changing functionality
 
@@ -135,7 +135,7 @@ When modifying existing files:
 ### When Research is Needed
 - Search official documentation for frameworks/libraries
 - Look for established patterns in the codebase
-- Check `examples/` for reference implementations
+- Check `_ce/examples/` for reference implementations
 - Ask for clarification if requirements are ambiguous
 
 ---

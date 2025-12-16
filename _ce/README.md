@@ -60,13 +60,13 @@ Creates an **Initial ARG** document through interactive questions:
 - Security requirements
 - Performance targets
 
-**Output**: `arg/initial/YYYY-MM-DD-[project-name]-initial-arg.md`
+**Output**: `_ce/arg/initial/YYYY-MM-DD-[project-name]-initial-arg.md`
 
 ---
 
 ### Phase 2: Generate Implementation Plan (PRP)
 
-**Command**: `/generate-initial-prp arg/initial/[your-arg-file].md`
+**Command**: `/generate-initial-prp _ce/arg/initial/[your-arg-file].md`
 
 **What happens**:
 1. **Research**: Gathers documentation for frameworks, libraries, deployment platforms
@@ -76,16 +76,16 @@ Creates an **Initial ARG** document through interactive questions:
 3. **Blueprint Creation**: Generates detailed implementation steps with pseudocode, patterns, and validation commands
 
 **Outputs**:
-- `prp/initial/YYYY-MM-DD-[project-name]-initial-prp.md` (foundation only)
-- `arg/feature/001-[feature-name]-feature-arg.md` (for each separated business feature)
-- `arg/feature/002-[feature-name]-feature-arg.md`
+- `_ce/prp/initial/YYYY-MM-DD-[project-name]-initial-prp.md` (foundation only)
+- `_ce/arg/feature/001-[feature-name]-feature-arg.md` (for each separated business feature)
+- `_ce/arg/feature/002-[feature-name]-feature-arg.md`
 - etc.
 
 ---
 
 ### Phase 3: Implement Foundation
 
-**Command**: `/execute-initial prp/initial/[your-prp-file].md`
+**Command**: `/execute-initial _ce/prp/initial/[your-prp-file].md`
 
 **What happens**:
 - Reads complete PRP with all context
@@ -113,11 +113,11 @@ Creates an **Initial ARG** document through interactive questions:
 
 For each business feature (in numbered order):
 
-**Step 1**: `/generate-feature-prp arg/feature/001-[feature-name]-feature-arg.md`
+**Step 1**: `/generate-feature-prp _ce/arg/feature/001-[feature-name]-feature-arg.md`
 - Generates implementation blueprint for the feature
-- Output: `prp/feature/001-[feature-name]-feature-prp.md`
+- Output: `_ce/prp/feature/001-[feature-name]-feature-prp.md`
 
-**Step 2**: `/execute-feature prp/feature/001-[feature-name]-feature-prp.md`
+**Step 2**: `/execute-feature _ce/prp/feature/001-[feature-name]-feature-prp.md`
 - Implements the feature following the PRP
 - Runs progressive validation
 - Reports completion
@@ -201,14 +201,14 @@ Defines **HOW** to build it:
 
 ```
 # ARG Documents
-arg/initial/2024-03-15-task-manager-initial-arg.md
-arg/feature/001-user-notifications-feature-arg.md
-arg/feature/002-reporting-dashboard-feature-arg.md
+_ce/arg/initial/2024-03-15-task-manager-initial-arg.md
+_ce/arg/feature/001-user-notifications-feature-arg.md
+_ce/arg/feature/002-reporting-dashboard-feature-arg.md
 
 # PRP Documents
-prp/initial/2024-03-15-task-manager-initial-prp.md
-prp/feature/001-user-notifications-feature-prp.md
-prp/feature/002-reporting-dashboard-feature-prp.md
+_ce/prp/initial/2024-03-15-task-manager-initial-prp.md
+_ce/prp/feature/001-user-notifications-feature-prp.md
+_ce/prp/feature/002-reporting-dashboard-feature-prp.md
 ```
 
 ---
@@ -217,10 +217,10 @@ prp/feature/002-reporting-dashboard-feature-prp.md
 
 All templates are located in their respective directories:
 
-- **Initial ARG Template**: `arg/initial/template/initial-arg-template.md`
-- **Feature ARG Template**: `arg/feature/template/feature-arg-template.md`
-- **Initial PRP Template**: `prp/initial/template/initial-prp-template.md`
-- **Feature PRP Template**: `prp/feature/template/feature-prp-template.md`
+- **Initial ARG Template**: `_ce/arg/initial/template/initial-arg-template.md`
+- **Feature ARG Template**: `_ce/arg/feature/template/feature-arg-template.md`
+- **Initial PRP Template**: `_ce/prp/initial/template/initial-prp-template.md`
+- **Feature PRP Template**: `_ce/prp/feature/template/feature-prp-template.md`
 
 Templates are automatically used by the slash commands - you typically don't need to reference them directly.
 
@@ -228,7 +228,7 @@ Templates are automatically used by the slash commands - you typically don't nee
 
 ## Examples Directory
 
-The `examples/` directory is for storing:
+The `_ce/examples/` directory is for storing:
 - Code examples you find useful
 - UI component templates
 - Framework boilerplates
@@ -287,7 +287,7 @@ Features that **stay in foundation**:
 - **Solution**: Feature separation should have caught this. Check if business features were properly separated.
 
 **Issue**: AI doesn't follow established patterns
-- **Solution**: Add examples to `examples/` and reference them in ARG documents.
+- **Solution**: Add examples to `_ce/examples/` and reference them in ARG documents.
 
 **Issue**: Generated code doesn't match requirements
 - **Solution**: Be more specific in ARG acceptance criteria.
@@ -300,7 +300,7 @@ Features that **stay in foundation**:
 ┌─────────────────────────────────────────────────────────────────┐
 │ 1️⃣ REQUIREMENTS GATHERING                                       │
 │    /initial "project description"                               │
-│    → arg/initial/[date]-[name]-initial-arg.md              │
+│    → _ce/arg/initial/[date]-[name]-initial-arg.md          │
 └─────────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
@@ -310,13 +310,13 @@ Features that **stay in foundation**:
 │    STEP 2.1: Research (docs, patterns, gotchas)                │
 │                                                                  │
 │    STEP 2.2: FEATURE SEPARATION ⭐                              │
-│    ├─ Foundation → Initial PRP                                  │
-│    └─ Business Features → Feature ARGs (001, 002, 003...)      │
+│    ├─ Foundation → _ce/prp/initial/[date]-[name]-initial-prp.md│
+│    └─ Business Features → _ce/arg/feature/001-[feature]-feature-arg.md│
 │                                                                  │
 │    OUTPUTS:                                                      │
-│    → prp/initial/[date]-[name]-initial-prp.md              │
-│    → arg/feature/001-[feature]-feature-arg.md              │
-│    → arg/feature/002-[feature]-feature-arg.md              │
+│    → _ce/prp/initial/[date]-[name]-initial-prp.md          │
+│    → _ce/arg/feature/001-[feature]-feature-arg.md           │
+│    → _ce/arg/feature/002-[feature]-feature-arg.md           │
 └─────────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
@@ -328,7 +328,7 @@ Features that **stay in foundation**:
 ┌─────────────────────────────────────────────────────────────────┐
 │ 4️⃣ FEATURE IMPLEMENTATION (repeat for each feature)             │
 │    /generate-feature-prp [feature-arg-path]                     │
-│    → prp/feature/[number]-[feature]-feature-prp.md         │
+│    → _ce/prp/feature/[number]-[feature]-feature-prp.md      │
 │                                                                  │
 │    /execute-feature [feature-prp-path]                          │
 │    → Working feature                                            │
