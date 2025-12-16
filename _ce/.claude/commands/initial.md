@@ -20,7 +20,7 @@ Read the user input and identify:
 
 ### Step 2: Interactive Question Round
 
-Ask targeted questions to get a complete picture. Use the template `arg/initial/template/initial-arg-template.md` as a guide for what information is needed.
+Ask targeted questions to get a complete picture. Use the template `_ce/arg/initial/template/initial-arg-template.md` as a guide for what information is needed.
 
 **Important question areas**:
 
@@ -85,7 +85,7 @@ When you have sufficient information:
 
 1. **Read the template**:
    ```bash
-   Read arg/initial/template/initial-arg-template.md
+   Read _ce/arg/initial/template/initial-arg-template.md
    ```
 
 2. **Fill in all sections** with the collected information:
@@ -113,7 +113,7 @@ When you have sufficient information:
 
 4. **Save in correct location**:
    ```
-   arg/initial/[generated-filename].md
+   _ce/arg/initial/[generated-filename].md
    ```
 
 ### Step 5: Review & Confirmation
@@ -126,12 +126,12 @@ When you have sufficient information:
 
 Inform the user about next steps:
 ```
-✅ Initial ARG document generated: arg/initial/[filename].md
+✅ Initial ARG document generated: _ce/arg/initial/[filename].md
 
 Next steps:
 1. Review the document and fill in any open questions
-2. Generate an Initial PRP with: /generate-initial-prp arg/initial/[filename].md
-3. Execute the Initial PRP with: /execute-initial prp/initial/[prp-filename].md
+2. Generate an Initial PRP with: /generate-initial-prp _ce/arg/initial/[filename].md
+3. Execute the Initial PRP with: /execute-initial _ce/prp/initial/[prp-filename].md
 ```
 
 ---
@@ -189,7 +189,7 @@ Options:
 
 [Eventually generates ARG document]
 
-AI: ✅ Initial ARG document generated: arg/initial/2024-03-15-task-management-initial-arg.md
+AI: ✅ Initial ARG document generated: _ce/arg/initial/2024-03-15-task-management-initial-arg.md
 
 The document contains:
 - Complete technical stack specification
@@ -203,7 +203,7 @@ Open questions documented:
 - Payment gateway for premium features?
 
 Next step:
-/generate-initial-prp arg/initial/2024-03-15-task-management-initial-arg.md
+/generate-initial-prp _ce/arg/initial/2024-03-15-task-management-initial-arg.md
 ```
 
 ---
@@ -221,7 +221,7 @@ Before generating the final ARG document, ensure:
 - [ ] Development phases have realistic estimates
 - [ ] References and inspiration are added (if available)
 - [ ] Filename follows naming convention
-- [ ] Document is saved in arg/initial/
+- [ ] Document is saved in _ce/arg/initial/
 
 ---
 

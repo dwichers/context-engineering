@@ -4,7 +4,7 @@ Generate a comprehensive Feature PRP (Product Requirements Prompt) document base
 
 ## ARG Document Path: $ARGUMENTS
 
-This must be the path to the feature ARG document: `arg/feature/[filename].md`
+This must be the path to the feature ARG document: `_ce/arg/feature/[filename].md`
 
 ---
 
@@ -19,7 +19,7 @@ This must be the path to the feature ARG document: `arg/feature/[filename].md`
 
 2. **Read Initial ARG** (for project context):
    ```bash
-   Read arg/initial/[initial-arg-file].md
+   Read _ce/arg/initial/[initial-arg-file].md
    ```
 
 3. **Check Dependencies**:
@@ -98,7 +98,7 @@ Analyze existing code:
 
 1. **Read PRP template**:
    ```bash
-   Read prp/feature/template/feature-prp-template.md
+   Read _ce/prp/feature/template/feature-prp-template.md
    ```
 
 2. **Extract from ARG**:
@@ -205,7 +205,7 @@ Based on research:
 
 2. **Save**:
    ```
-   Location: prp/feature/[filename].md
+   Location: _ce/prp/feature/[filename].md
    ```
 
 ### Step 7: Quality Check & Confidence Score
@@ -229,7 +229,7 @@ Assess PRP on:
 ### Step 8: User Guidance
 
 ```
-✅ Feature PRP generated: prp/feature/[filename].md
+✅ Feature PRP generated: _ce/prp/feature/[filename].md
 
 The PRP contains:
 - Implementation blueprint with [X] concrete tasks
@@ -251,7 +251,7 @@ Dependencies:
 Estimated Implementation Time: [estimate]
 
 Next step:
-/execute-feature prp/feature/[filename].md
+/execute-feature _ce/prp/feature/[filename].md
 
 This will:
 1. [Task 1 summary]
@@ -338,7 +338,7 @@ N. Run validation & tests
 ```markdown
 # Feature Implementation - Product Requirements Prompt (PRP)
 
-**Generated from**: arg/feature/003-email-notifications-feature-arg.md
+**Generated from**: _ce/arg/feature/003-email-notifications-feature-arg.md
 **Generated on**: 2024-03-15
 **Feature Name**: Email Notifications
 **Feature Number**: 003

@@ -13,12 +13,12 @@ This contains the description of the feature that should be added to the applica
 ### Step 1: Context Gathering
 
 1. **Check for Initial ARG**:
-   - Look for initial ARG document in `arg/initial/`
+   - Look for initial ARG document in `_ce/arg/initial/`
    - Read it to understand the existing project context
    - Extract technical stack, data model, existing features
 
 2. **Check for Existing Features**:
-   - List files in `arg/feature/`
+   - List files in `_ce/arg/feature/`
    - Read recent feature ARGs to understand numbering and dependencies
    - Identify highest feature number
 
@@ -37,7 +37,7 @@ Analyze the user's feature description:
 
 ### Step 3: Interactive Questioning
 
-Ask targeted questions to get a complete picture. Use the template `arg/feature/template/feature-arg-template.md` as a guide.
+Ask targeted questions to get a complete picture. Use the template `_ce/arg/feature/template/feature-arg-template.md` as a guide.
 
 **Important question areas**:
 
@@ -104,7 +104,7 @@ Ask targeted questions to get a complete picture. Use the template `arg/feature/
 
 1. **Read template**:
    ```bash
-   Read arg/feature/template/feature-arg-template.md
+   Read _ce/arg/feature/template/feature-arg-template.md
    ```
 
 2. **Fill all sections**:
@@ -133,7 +133,7 @@ Ask targeted questions to get a complete picture. Use the template `arg/feature/
 
 4. **Save**:
    ```
-   Location: arg/feature/[filename].md
+   Location: _ce/arg/feature/[filename].md
    ```
 
 ### Step 6: Review & Validation
@@ -146,7 +146,7 @@ Ask targeted questions to get a complete picture. Use the template `arg/feature/
 
 2. Show summary to user:
    ```
-   ✅ Feature ARG generated: arg/feature/[filename].md
+   ✅ Feature ARG generated: _ce/arg/feature/[filename].md
 
    Feature: [Name]
    Number: [X]
@@ -165,7 +165,7 @@ Ask targeted questions to get a complete picture. Use the template `arg/feature/
    - [Question 2]
 
    Next step:
-   /generate-feature-prp arg/feature/[filename].md
+   /generate-feature-prp _ce/arg/feature/[filename].md
    ```
 
 ---
@@ -253,7 +253,7 @@ Options:
 
 [More questions about template, content, unsubscribe, etc.]
 
-AI: ✅ Feature ARG generated: arg/feature/003-email-notifications-feature-arg.md
+AI: ✅ Feature ARG generated: _ce/arg/feature/003-email-notifications-feature-arg.md
 
 Feature: Email Notifications
 Number: 003
@@ -273,7 +273,7 @@ Open questions:
 - Email templates versioning strategy?
 
 Next step:
-/generate-feature-prp arg/feature/003-email-notifications-feature-arg.md
+/generate-feature-prp _ce/arg/feature/003-email-notifications-feature-arg.md
 ```
 
 ---

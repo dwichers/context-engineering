@@ -4,7 +4,7 @@ Generate a comprehensive Initial PRP (Product Requirements Prompt) document base
 
 ## ARG Document Path: $ARGUMENTS
 
-This must be the path to the initial ARG document: `arg/initial/[filename].md`
+This must be the path to the initial ARG document: `_ce/arg/initial/[filename].md`
 
 ---
 
@@ -93,7 +93,7 @@ Save relevant links in the PRP.
 
 #### 2.5 Examples Folder Check
 
-Check `examples/` for:
+Check `_ce/examples/` for:
 - Relevant code examples
 - UI components
 - API patterns
@@ -135,13 +135,13 @@ From the Initial ARG, categorize ALL features into:
 For EACH feature in category B:
 
 1. **Determine feature number**:
-   - Check `arg/feature/` for existing features
+   - Check `_ce/arg/feature/` for existing features
    - Assign next sequential number
    - Order by logical dependency (001, 002, 003, etc.)
 
 2. **Generate Feature ARG** using template:
    ```bash
-   Read arg/feature/template/feature-arg-template.md
+   Read _ce/arg/feature/template/feature-arg-template.md
    ```
 
 3. **Fill Feature ARG** with information from Initial ARG:
@@ -156,7 +156,7 @@ For EACH feature in category B:
 
 4. **Save Feature ARG**:
    ```
-   Location: arg/feature/[number]-[feature-name]-feature-arg.md
+   Location: _ce/arg/feature/[number]-[feature-name]-feature-arg.md
    Format: 001-user-profile-management-feature-arg.md
    ```
 
@@ -181,16 +181,16 @@ Separated Features (Feature ARGs created):
 [List all created feature ARGs with numbers]
 
 ✅ Generated Feature ARGs:
-1. arg/feature/001-[name]-feature-arg.md - [Priority: High]
-2. arg/feature/002-[name]-feature-arg.md - [Priority: High]
-3. arg/feature/003-[name]-feature-arg.md - [Priority: Medium]
+1. _ce/arg/feature/001-[name]-feature-arg.md - [Priority: High]
+2. _ce/arg/feature/002-[name]-feature-arg.md - [Priority: High]
+3. _ce/arg/feature/003-[name]-feature-arg.md - [Priority: Medium]
 ...
 
 Recommended Implementation Order:
 1. Execute Initial PRP first (/execute-initial)
 2. Then implement features in numbered order:
-   - /generate-feature-prp arg/feature/001-...
-   - /execute-feature prp/feature/001-...
+   - /generate-feature-prp _ce/arg/feature/001-...
+   - /execute-feature _ce/prp/feature/001-...
    - (repeat for each feature)
 ```
 
@@ -202,7 +202,7 @@ Recommended Implementation Order:
 
 1. **Read the PRP template**:
    ```bash
-   Read prp/initial/template/initial-prp-template.md
+   Read _ce/prp/initial/template/initial-prp-template.md
    ```
 
 2. **Fill all sections** with information from:
@@ -338,7 +338,7 @@ Document CRITICAL information:
 
 2. **Save document**:
    ```
-   Location: prp/initial/[filename].md
+   Location: _ce/prp/initial/[filename].md
    ```
 
 ### Step 9: Quality Check & Confidence Score
@@ -361,7 +361,7 @@ Assess the PRP on:
 
 Inform user about:
 ```
-✅ Initial PRP generated: prp/initial/[filename].md
+✅ Initial PRP generated: _ce/prp/initial/[filename].md
 
 🔍 Feature Separation Complete!
 
@@ -373,9 +373,9 @@ Foundation in Initial PRP:
 
 Separated Features (Feature ARGs created):
 ✅ Generated [N] Feature ARGs:
-1. arg/feature/001-[name]-feature-arg.md - [Priority]
-2. arg/feature/002-[name]-feature-arg.md - [Priority]
-3. arg/feature/003-[name]-feature-arg.md - [Priority]
+1. _ce/arg/feature/001-[name]-feature-arg.md - [Priority]
+2. _ce/arg/feature/002-[name]-feature-arg.md - [Priority]
+3. _ce/arg/feature/003-[name]-feature-arg.md - [Priority]
 ... (list all created features)
 
 Confidence Score: [score]/10
@@ -386,7 +386,7 @@ Confidence Score: [score]/10
 📋 Recommended Implementation Order:
 
 PHASE 1 - Foundation:
-/execute-initial prp/initial/[filename].md
+/execute-initial _ce/prp/initial/[filename].md
 
 This will implement:
 1. Set up project structure
@@ -401,13 +401,13 @@ This will implement:
 
 PHASE 2 - Features (implement in numbered order):
 For each feature:
-  1. /generate-feature-prp arg/feature/[number]-[name]-feature-arg.md
-  2. /execute-feature prp/feature/[number]-[name]-feature-prp.md
+  1. /generate-feature-prp _ce/arg/feature/[number]-[name]-feature-arg.md
+  2. /execute-feature _ce/prp/feature/[number]-[name]-feature-prp.md
   3. Test & validate
   4. Move to next feature
 
 Start with:
-/execute-initial prp/initial/[filename].md
+/execute-initial _ce/prp/initial/[filename].md
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
@@ -458,13 +458,13 @@ Before saving the PRP, ensure:
 - [ ] Critical gotchas documented
 - [ ] Library versions specified
 - [ ] Similar project references added
-- [ ] Examples from examples/ referenced
+- [ ] Examples from _ce/examples/ referenced
 
 ### Implementation Blueprint
 - [ ] All tasks clearly defined
 - [ ] Task order is logical (dependencies respected)
 - [ ] FILES to create/modify listed for each task
-- [ ] PATTERN references from examples/docs
+- [ ] PATTERN references from _ce/examples/ docs
 - [ ] PSEUDOCODE for complex parts
 - [ ] VALIDATION steps for each task
 
@@ -510,7 +510,7 @@ Before saving the PRP, ensure:
 ```markdown
 # Initial Project Setup - Product Requirements Prompt (PRP)
 
-**Generated from**: arg/initial/2024-03-15-task-management-initial-arg.md
+**Generated from**: _ce/arg/initial/2024-03-15-task-management-initial-arg.md
 **Generated on**: 2024-03-15
 **Project Name**: Task Management Application
 
