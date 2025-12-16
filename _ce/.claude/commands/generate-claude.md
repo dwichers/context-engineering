@@ -10,7 +10,7 @@ Analyze the project and update CLAUDE.md with project-specific information while
 
 #### 1.1 Read Current CLAUDE.md
 ```bash
-Read D:\webroot\personal\context-engineering-claude\CLAUDE.md
+Read CLAUDE.md
 ```
 
 **Check for**:
@@ -223,7 +223,7 @@ Using the extracted information, create the project-specific content:
 
 #### 3.1 Load Template
 ```bash
-Read _ce/.claude/CLAUDE-template.md
+Read .claude/CLAUDE-template.md
 ```
 
 #### 3.2 Fill Template Placeholders
