@@ -4,7 +4,7 @@ Implement the complete initial project setup according to the Initial PRP docume
 
 ## PRP File: $ARGUMENTS
 
-This must be the path to the initial PRP document: `_ce/prp/initial/[filename].md`
+This must be the path to the initial PRP document: `.claude/prp/initial/[filename].md`
 
 ---
 
@@ -364,10 +364,10 @@ $ cd frontend && npm test
 The foundation is ready! You can now implement features.
 
 Recommended order:
-1. Review _ce/arg/feature/ for available features
+1. Review .claude/arg/feature/ for available features
 2. Or create new feature: /generate-feature-arg "[description]"
-3. Generate feature PRP: /generate-feature-prp _ce/arg/feature/[file].md
-4. Implement feature: /execute-feature _ce/prp/feature/[file].md
+3. Generate feature PRP: /generate-feature-prp .claude/arg/feature/[file].md
+4. Implement feature: /execute-feature .claude/prp/feature/[file].md
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```

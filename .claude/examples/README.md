@@ -56,7 +56,7 @@ Refer to specific files:
 ## 📝 Structure Suggestions
 
 ```
-_ce/examples/
+.claude/examples/
 ├── ui-components/           # UI component examples
 │   ├── buttons/
 │   ├── forms/
