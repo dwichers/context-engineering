@@ -104,10 +104,10 @@ This PRP document describes **ONLY** the project foundation setup. Business feat
   why: Design patterns, color schemes, typography
 
 # Examples from Codebase
-- file: _ce/examples/[relevant-example-1]
+- file: examples/[relevant-example-1]
   why: [Pattern to follow - e.g., project structure]
 
-- file: _ce/examples/[relevant-example-2]
+- file: examples/[relevant-example-2]
   why: [Pattern to follow - e.g., authentication setup]
 ```
 
@@ -1176,7 +1176,7 @@ npm run preview
 
 ### Critical Reminders
 - Follow CLAUDE.md guidelines strictly
-- Use existing patterns from _ce/examples/
+- Use existing patterns from examples/
 - Validate after each major step
 - Don't skip error handling (see Anti-Patterns above!)
 - Write tests as you implement features
@@ -1196,7 +1196,7 @@ npm run preview
 ### When in Doubt
 - Check ARG document for clarification
 - Search official documentation
-- Look for similar patterns in _ce/examples/
+- Look for similar patterns in examples/
 - Ask for clarification if requirements unclear
 - Prioritize security and best practices
 

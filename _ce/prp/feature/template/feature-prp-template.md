@@ -88,8 +88,8 @@ This PRP document describes the complete implementation of feature: [Feature Nam
   why: [Existing component that will be extended]
   critical: [Current implementation details]
 
-# Examples from _ce/examples/
-- file: _ce/examples/[relevant-example]
+# Examples from examples/
+- file: examples/[relevant-example]
   why: [Pattern this demonstrates]
   critical: [Best practices to follow]
 
@@ -97,7 +97,7 @@ This PRP document describes the complete implementation of feature: [Feature Nam
 - url: [Figma/design link if available]
   why: [UI/UX specifications]
 
-- file: _ce/examples/[ui-component-example]
+- file: examples/[ui-component-example]
   why: [UI pattern to follow]
 ```
 

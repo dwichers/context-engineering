@@ -364,10 +364,10 @@ $ cd frontend && npm test
 The foundation is ready! You can now implement features.
 
 Recommended order:
-1. Review _ce/arg/feature/ for available features
+1. Review arg/feature/ for available features
 2. Or create new feature: /generate-feature-arg "[description]"
-3. Generate feature PRP: /generate-feature-prp _ce/arg/feature/[file].md
-4. Implement feature: /execute-feature _ce/prp/feature/[file].md
+3. Generate feature PRP: /generate-feature-prp arg/feature/[file].md
+4. Implement feature: /execute-feature prp/feature/[file].md
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```

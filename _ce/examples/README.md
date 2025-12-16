@@ -38,10 +38,10 @@ In your Initial ARG document, refer to examples here:
 ## References & Inspiratie
 
 ### Repository Voorbeelden
-- _ce/examples/[repo-name]/ - Goede project structure voor [framework]
+- examples/[repo-name]/ - Goede project structure voor [framework]
 
 ### UI Components
-- _ce/examples/ui-components/ - Component library patterns
+- examples/ui-components/ - Component library patterns
 ```
 
 ### When generating PRPs
@@ -50,7 +50,7 @@ The AI will automatically scan this directory for relevant patterns and examples
 ### When implementing
 Refer to specific files:
 ```python
-# PATTERN: Follow _ce/examples/auth-example/auth.py
+# PATTERN: Follow examples/auth-example/auth.py
 ```
 
 ## 📝 Structure Suggestions

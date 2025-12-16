@@ -22,14 +22,14 @@ Read CLAUDE.md
 
 **Search for ARG documents**:
 ```bash
-Glob **/*-initial-arg.md in _ce/arg/initial/
-Glob **/*-feature-arg.md in _ce/arg/feature/
+Glob **/*-initial-arg.md in arg/initial/
+Glob **/*-feature-arg.md in arg/feature/
 ```
 
 **Search for PRP documents**:
 ```bash
-Glob **/*-initial-prp.md in _ce/prp/initial/
-Glob **/*-feature-prp.md in _ce/prp/feature/
+Glob **/*-initial-prp.md in prp/initial/
+Glob **/*-feature-prp.md in prp/feature/
 ```
 
 **Priority**:
@@ -442,8 +442,8 @@ Frontend:
   - [UI Library] [version]
 
 📚 Documentation Sources
-- Initial ARG: [✅/❌] _ce/arg/initial/[filename]
-- Initial PRP: [✅/❌] _ce/prp/initial/[filename]
+- Initial ARG: [✅/❌] arg/initial/[filename]
+- Initial PRP: [✅/❌] prp/initial/[filename]
 - Feature ARGs: [X] features documented
 - Codebase Analysis: [✅/❌]
 

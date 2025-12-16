@@ -338,7 +338,7 @@ Document CRITICAL information:
 
 2. **Save document**:
    ```
-   Location: _ce/prp/initial/[filename].md
+   Location: prp/initial/[filename].md
    ```
 
 ### Step 9: Quality Check & Confidence Score
@@ -361,7 +361,7 @@ Assess the PRP on:
 
 Inform user about:
 ```
-✅ Initial PRP generated: _ce/prp/initial/[filename].md
+✅ Initial PRP generated: prp/initial/[filename].md
 
 🔍 Feature Separation Complete!
 
@@ -458,7 +458,7 @@ Before saving the PRP, ensure:
 - [ ] Critical gotchas documented
 - [ ] Library versions specified
 - [ ] Similar project references added
-- [ ] Examples from _ce/examples/ referenced
+- [ ] Examples from examples/ referenced
 
 ### Implementation Blueprint
 - [ ] All tasks clearly defined

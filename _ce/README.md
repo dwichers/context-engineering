@@ -60,13 +60,13 @@ Creates an **Initial ARG** document through interactive questions:
 - Security requirements
 - Performance targets
 
-**Output**: `_ce/arg/initial/YYYY-MM-DD-[project-name]-initial-arg.md`
+**Output**: `arg/initial/YYYY-MM-DD-[project-name]-initial-arg.md`
 
 ---
 
 ### Phase 2: Generate Implementation Plan (PRP)
 
-**Command**: `/generate-initial-prp _ce/arg/initial/[your-arg-file].md`
+**Command**: `/generate-initial-prp arg/initial/[your-arg-file].md`
 
 **What happens**:
 1. **Research**: Gathers documentation for frameworks, libraries, deployment platforms
@@ -300,7 +300,7 @@ Features that **stay in foundation**:
 ┌─────────────────────────────────────────────────────────────────┐
 │ 1️⃣ REQUIREMENTS GATHERING                                       │
 │    /initial "project description"                               │
-│    → _ce/arg/initial/[date]-[name]-initial-arg.md              │
+│    → arg/initial/[date]-[name]-initial-arg.md              │
 └─────────────────────────────────────────────────────────────────┘
                               ↓
 ┌─────────────────────────────────────────────────────────────────┐
