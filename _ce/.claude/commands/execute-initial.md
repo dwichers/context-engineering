@@ -4,7 +4,7 @@ Implement the complete initial project setup according to the Initial PRP docume
 
 ## PRP File: $ARGUMENTS
 
-This must be the path to the initial PRP document: `_ce/prp/initial/[filename].md`
+This must be the path to the initial PRP document: `prp/initial/[filename].md`
 
 ---
 

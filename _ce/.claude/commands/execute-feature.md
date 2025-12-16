@@ -4,7 +4,7 @@ Implement a feature according to the Feature PRP document.
 
 ## PRP File: $ARGUMENTS
 
-This must be the path to the feature PRP document: `_ce/prp/feature/[filename].md`
+This must be the path to the feature PRP document: `prp/feature/[filename].md`
 
 ---
 
